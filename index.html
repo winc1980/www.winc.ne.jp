@@ -170,6 +170,22 @@
             font-weight: bold;
         }
 
+        .no-border {
+            border: none;
+        }
+
+        .no-border:first-child {
+            border-right: 1px solid rgba(0, 0, 0, .125);
+        }
+
+        .no-border img {
+            border-radius: 0;
+        }
+
+        .no-border p:last-child {
+            margin-bottom: 0;
+        }
+
         #linkAccordion ul {
             margin-bottom: 0;
             padding-left: 20px;
@@ -503,31 +519,30 @@
                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                                 data-target="#contactCollapseThree" aria-expanded="false"
                                 aria-controls="contactCollapseThree">
-                                お問い合わせフォーム
+                                お問い合わせ
                             </button>
                         </h2>
                     </div>
                     <div id="contactCollapseThree" class="collapse" aria-labelledby="contactHeadingThree"
                         data-parent="#contactAccordion">
                         <div class="card-group">
-                            <div class="card">
-                                <img src="..." class="card-img-top" alt="...">
+                            <div class="card no-border">
+                                <img src="./images/typing.jpg" class="card-img-top">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <a target="_blank" href="https://forms.gle/WAAfwJ3FZS9idtCU8"><i
-                                            class="fas fa-file-signature"></i> お問い合わせフォーム</a>
+                                    <h5 class="card-title">お問い合わせフォームから</h5>
+                                    <p class="card-text">次のお問い合わせフォームをご利用ください。</p>
+                                    <p><a target="_blank" class="btn btn-secondary"
+                                            href="https://forms.gle/WAAfwJ3FZS9idtCU8" role="button"><i
+                                                class="fas fa-external-link-alt"></i> お問い合わせフォーム</a></p>
                                 </div>
                             </div>
-                            <div class="card">
-                                <img src="..." class="card-img-top" alt="...">
+                            <div class="card no-border">
+                                <img src="./images/texting.jpg" class="card-img-top">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <a target="_blank" href="https://twitter.com/winc_w"><i class="fab fa-twitter"></i>
-                                        Twitter（@winc_w）</a>
+                                    <h5 class="card-title">Twitter から</h5>
+                                    <p class="card-text">Twitter で @winc_w にダイレクトメッセージを送ってください。</p>
+                                    <p><a target="_blank" class="btn btn-secondary" href="https://twitter.com/winc_w"><i
+                                                class="fab fa-twitter"></i> Twitter（@winc_w）</a></p>
                                 </div>
                             </div>
                         </div>
