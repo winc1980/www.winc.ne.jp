@@ -269,6 +269,12 @@
                 font-size: 3.5rem;
             }
         }
+
+        iframe.calendar {
+            width: 100%;
+            min-width: 300px;
+            height: 500px;
+        }
     </style>
 </head>
 
@@ -286,6 +292,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#location-anchor">活動場所</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#calendar-anchor">活動予定</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact-anchor">お問い合わせ</a>
@@ -713,6 +722,17 @@
                             role="button"><i class="fas fa-external-link-alt"></i> キャンパス間連絡バス</a></p>
                 </div>
             </div>
+
+            <!--
+                活動予定
+            -->
+
+            <a id="calendar-anchor" class="anchor"></a>
+            <h2 class="border-accent mx-auto my-5 py-1 font-weight-bold text-center"><i
+                    class="lg far fa-calendar-alt"></i><br>活動予定</h2>
+            <iframe class="calendar"
+                src="https://calendar.google.com/calendar/embed?wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTokyo&amp;src=YjZxYXZ2dm42YnZndHU0aWwyZXBhazJwbThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23009688&amp;color=%230B8043&amp;mode=AGENDA&amp;showTabs=1&amp;showPrint=0&amp;showDate=1&amp;showNav=1&amp;showCalendars=0&amp;title&amp;showTitle=0"
+                frameborder="0" scrolling="no"></iframe>
 
             <!--
                 お問い合わせ
