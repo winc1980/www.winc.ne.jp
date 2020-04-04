@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Noto Sans JP -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -33,8 +36,6 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@winc_w">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
-
         :root {
             --main-color-1: #E7335D;
             --main-color-2: #EC578A;
@@ -985,6 +986,33 @@
         </div>
     </main>
 
+    <!--
+        campaignModalCenter
+    -->
+
+    <div class="modal fade" id="campaignModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="campaignModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="campaignModalLongTitle">ご入会をご希望ですか？</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    2020年度新入会員を募集中です！<a target="_blank"
+                        href="https://twitter.com/winc_w">Twitter（@winc_w）</a>では、入会を希望される皆さんからのご質問にお答えしています。ぜひご覧ください。
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                    <a target="_blank" class="btn btn-primary" href="https://secure.register.winc.ne.jp"
+                        role="button"><i class="fas fa-external-link-alt"></i> ご入会手続き</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer class="container">
         <p>© 2020 Copyright: <a href="https://www.winc.ne.jp">コンピュータ研究会・WINC</a></p>
     </footer>
@@ -1001,6 +1029,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <!-- visitCount -->
+    <script>
+        let visitCount = localStorage.getItem('visitCount');
+        visitCount ? visitCount++ : visitCount = 1;
+        localStorage.setItem('visitCount', visitCount);
+        console.log(visitCount);
+        if (visitCount % 5 == 2) {
+            $('#campaignModalCenter').modal();
+        }
+    </script>
 </body>
 
 </html>
