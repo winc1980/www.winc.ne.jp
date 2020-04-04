@@ -1015,12 +1015,12 @@
                 <div class="modal-body">
                     2020年度新入会員を募集中です！<a target="_blank"
                         href="https://twitter.com/winc_w">Twitter（@winc_w）</a>では、入会を希望される皆さんからのご質問にお答えしています。ぜひご覧ください。
-                </div>
-                <div class="modal-footer">
-                    <div class="form-check">
+                    <div class="form-check mt-2">
                         <input type="checkbox" class="form-check-input" id="campaignCheck">
                         <label class="form-check-label" for="campaignCheck">今後表示しない</label>
                     </div>
+                </div>
+                <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
                     <a target="_blank" class="btn btn-primary" href="https://secure.register.winc.ne.jp"
                         role="button"><i class="fas fa-external-link-alt"></i> ご入会手続き</a>
@@ -1050,18 +1050,21 @@
         let visitCount = localStorage.getItem('visitCount');
         let campaign = localStorage.getItem('campaign');
 
-        visitCount ? visitCount++ : visitCount = 1;
+        if (visitCount) {
+            visitCount++
+        } else {
+            visitCount = 1;
+            campaign = 'on';
+        }
         localStorage.setItem('visitCount', visitCount);
 
         if (visitCount % 5 === 2 && campaign !== 'off') {
             $('#campaignModalCenter').modal();
         }
 
-        $('#campaignModalCenter').on('hidden.bs.modal', (e) => {
-            if ($('#campaignCheck').prop("checked") === true) {
-                campaign = 'off';
-                localStorage.setItem('campaign', campaign);
-            }
+        $('#campaignCheck').change(() => {
+            $('#campaignCheck').prop("checked") === true ? campaign = 'off' : campaign = 'on';
+            localStorage.setItem('campaign', campaign);
         });
     </script>
     <script SameSite="None; Secure" src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
