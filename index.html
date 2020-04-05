@@ -208,8 +208,11 @@
         }
 
         .jumbotron {
-            background: rgb(233, 64, 120);
-            background: linear-gradient(0deg, rgba(233, 64, 120, 1) 11%, rgba(236, 39, 74, 1) 100%);
+            background-color: rgb(233, 64, 120);
+            background-image: url('./images/background.svg');
+            background-repeat: no-repeat;
+            background-size: 55% auto;
+            background-position: right 5% bottom 0;
             border-radius: 0;
             color: white;
         }
@@ -286,6 +289,24 @@
                 height: 150px;
                 object-fit: cover;
             }
+
+            .jumbotron {
+                background-size: auto 100%;
+                background-position: bottom 0 left 50%;
+            }
+        }
+
+        @media (max-width: 1250px) {
+            .jumbotron {
+                background-size: auto 100%;
+                background-position: right 5% bottom 0;
+            }
+
+            .intro-text {
+                padding: 10px;
+                background-color: #0000004b;
+                border-radius: .25rem;
+            }
         }
     </style>
 </head>
@@ -336,21 +357,28 @@
                     class="fas fa-external-link-alt"></i> ご入会手続き</a>
         </div>
     </nav>
-
     <main role="main">
         <div class="jumbotron">
             <div class="container">
-                <h1 class="display-3">Hello, world!</h1>
-                <p>コンピュータ研究会・WINCは早稲田大学で最も長い歴史を持つコンピュータサークルです。インターカレッジサークルで、他大学の学生の参加を歓迎しています。毎週実施される定例会に加えて、セクションと呼ばれるグループに分かれて各自の知識や経験を共有しています。また、懇親会や合宿、早稲田祭での企画展示も行っています。
-                </p>
-                <p>
-                    <a target="_blank" class="btn btn-primary btn-lg my-2 mr-2" href="https://2020.winc.ne.jp"
-                        role="button"><i class="fas fa-external-link-alt"></i> 新歓特設サイト</a>
-                    <a target="_blank" class="btn btn-primary btn-lg my-2 mr-2" href="https://flyer.2020.winc.ne.jp/"
-                        role="button"><i class="fas fa-external-link-alt"></i> フライヤー</a>
-                    <a target="_blank" class="btn btn-primary btn-lg my-2" href="https://secure.register.winc.ne.jp"
-                        role="button"><i class="fas fa-external-link-alt"></i> ご入会手続き</a>
-                </p>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <h1 class="display-3">Hello, world!</h1>
+                        <p class="intro-text">
+                            コンピュータ研究会・WINCは早稲田大学で最も長い歴史を持つコンピュータサークルです。インターカレッジサークルで、他大学の学生の参加を歓迎しています。毎週実施される定例会に加えて、セクションと呼ばれるグループに分かれて各自の知識や経験を共有しています。また、懇親会や合宿、早稲田祭での企画展示も行っています。
+                        </p>
+                        <p>
+                            <a target="_blank" class="btn btn-primary btn-lg my-2 mr-2" href="https://2020.winc.ne.jp"
+                                role="button"><i class="fas fa-external-link-alt"></i> 新歓特設サイト</a>
+                            <a target="_blank" class="btn btn-primary btn-lg my-2 mr-2"
+                                href="https://flyer.2020.winc.ne.jp/" role="button"><i
+                                    class="fas fa-external-link-alt"></i>
+                                フライヤー</a>
+                            <a target="_blank" class="btn btn-primary btn-lg my-2"
+                                href="https://secure.register.winc.ne.jp" role="button"><i
+                                    class="fas fa-external-link-alt"></i> ご入会手続き</a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="container">
@@ -1131,6 +1159,8 @@
 
     <footer class="container">
         <p>© 2020 Copyright: <a href="https://www.winc.ne.jp">コンピュータ研究会・WINC</a></p>
+        <p><a href="https://www.freepik.com/free-photos-vectors/banner">Banner vector created by katemangostar -
+                www.freepik.com</a></p>
     </footer>
 
     <!-- jQuery -->
