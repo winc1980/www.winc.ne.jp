@@ -145,8 +145,8 @@
 
         a.anchor {
             display: block;
-            padding-top: 70px;
-            margin-top: -70px;
+            padding-top: 50px;
+            margin-top: -50px;
         }
 
         .google-maps {
@@ -1191,6 +1191,17 @@
                 location.innerHTML = location.innerHTML + ' ' + data.location;
                 let company = githubProfileCard.querySelector('.company');
                 company.innerHTML = company.innerHTML + ' ' + data.company;
+            });
+        });
+    </script>
+    <!-- Smooth Scroll -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
             });
         });
     </script>
