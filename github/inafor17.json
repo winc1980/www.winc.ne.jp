@@ -6,5 +6,5 @@
     "repos_url": "https://api.github.com/users/inafor17/repos",
     "name": "Kosuke",
     "company": "早稲田大学",
-    "love": "競プロ, React"
+    "love": "<span data-toggle='tooltip' data-placement='top' title='競技プログラミング, React'>競プロ, React</span>"
 }
