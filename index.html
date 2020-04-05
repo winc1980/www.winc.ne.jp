@@ -744,7 +744,7 @@
                         <div class="card-body">
                             <h3 class="card-title name mb-2"></h3>
                             <p class="card-text username text-muted mb-1"><i class="fas fa-user fa-fw"></i></p>
-                            <p class="card-text location text-muted mb-1"><i class="fas fa-globe-asia fa-fw"></i></p>
+                            <p class="card-text love text-muted mb-1"><i class="fas fa-heart fa-fw"></i></p>
                             <p class="card-text company text-muted mb-0"><i class="fas fa-school fa-fw"></i></p>
                         </div>
                     </div>
@@ -755,7 +755,7 @@
                         <div class="card-body">
                             <h3 class="card-title name mb-2"></h3>
                             <p class="card-text username text-muted mb-1"><i class="fas fa-user fa-fw"></i></p>
-                            <p class="card-text location text-muted mb-1"><i class="fas fa-globe-asia fa-fw"></i></p>
+                            <p class="card-text love text-muted mb-1"><i class="fas fa-heart fa-fw"></i></p>
                             <p class="card-text company text-muted mb-0"><i class="fas fa-school fa-fw"></i></p>
                         </div>
                     </div>
@@ -766,7 +766,7 @@
                         <div class="card-body">
                             <h3 class="card-title name mb-2"></h3>
                             <p class="card-text username text-muted mb-1"><i class="fas fa-user fa-fw"></i></p>
-                            <p class="card-text location text-muted mb-1"><i class="fas fa-globe-asia fa-fw"></i></p>
+                            <p class="card-text love text-muted mb-1"><i class="fas fa-heart fa-fw"></i></p>
                             <p class="card-text company text-muted mb-0"><i class="fas fa-school fa-fw"></i></p>
                         </div>
                     </div>
@@ -777,7 +777,7 @@
                         <div class="card-body">
                             <h3 class="card-title name mb-2"></h3>
                             <p class="card-text username text-muted mb-1"><i class="fas fa-user fa-fw"></i></p>
-                            <p class="card-text location text-muted mb-1"><i class="fas fa-globe-asia fa-fw"></i></p>
+                            <p class="card-text love text-muted mb-1"><i class="fas fa-heart fa-fw"></i></p>
                             <p class="card-text company text-muted mb-0"><i class="fas fa-school fa-fw"></i></p>
                         </div>
                     </div>
@@ -788,7 +788,7 @@
                         <div class="card-body">
                             <h3 class="card-title name mb-2"></h3>
                             <p class="card-text username text-muted mb-1"><i class="fas fa-user fa-fw"></i></p>
-                            <p class="card-text location text-muted mb-1"><i class="fas fa-globe-asia fa-fw"></i></p>
+                            <p class="card-text love text-muted mb-1"><i class="fas fa-heart fa-fw"></i></p>
                             <p class="card-text company text-muted mb-0"><i class="fas fa-school fa-fw"></i></p>
                         </div>
                     </div>
@@ -1183,14 +1183,17 @@
                 usericon.src = data.avatar_url;
                 usericon.outerHTML = '<a target="_blank" href="' + data.html_url + '">' + usericon.outerHTML + '</a>';
                 let name = githubProfileCard.querySelector('.name');
-                console.log(name.innerHTML);
                 name.innerHTML = name.innerHTML + data.name;
                 let username = githubProfileCard.querySelector('.username');
                 username.innerHTML = username.innerHTML + ' ' + data.login;
-                let location = githubProfileCard.querySelector('.location');
-                location.innerHTML = location.innerHTML + ' ' + data.location;
+                let love = githubProfileCard.querySelector('.love');
+                love.innerHTML = love.innerHTML + ' ' + data.love;
                 let company = githubProfileCard.querySelector('.company');
                 company.innerHTML = company.innerHTML + ' ' + data.company;
+                // Tooltip
+                $(function () {
+                    $('[data-toggle="tooltip"]').tooltip();
+                });
             });
         });
     </script>
