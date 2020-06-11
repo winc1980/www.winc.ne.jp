@@ -88,7 +88,7 @@
             width: fit-content;
             margin: 10px auto 30px;
             font-size: 28px;
-            font-weight: bold;
+            font-weight: 400;
         }
 
         .activity .card.programming h2 {
@@ -106,7 +106,7 @@
         .activity .card h3 {
             margin: 5px 0;
             font-size: 20px;
-            font-weight: bold;
+            font-weight: 400;
         }
 
         .activity .card li {
@@ -117,7 +117,7 @@
             background-color: #F8F8F8;
             filter: drop-shadow(1px 1px rgba(0, 0, 0, 0.25));
             font-size: 18px;
-            font-weight: bold;
+            font-weight: 400;
             cursor: pointer;
         }
 
@@ -139,6 +139,7 @@
 
         body {
             font-family: 'Noto Sans JP', sans-serif;
+            font-weight: 300;
             padding-top: 3.5rem;
             overscroll-behavior: none;
         }
@@ -163,10 +164,6 @@
             left: 0;
             width: 100% !important;
             height: 100% !important;
-        }
-
-        .display-3 {
-            font-weight: bold;
         }
 
         .no-border {
@@ -208,28 +205,35 @@
         }
 
         .jumbotron {
-            background-color: rgb(233, 64, 120);
-            background-image: url('./images/background.svg');
+            background-image: url(/images/background.jpg);
             background-repeat: no-repeat;
-            background-size: 55% auto;
-            background-position: right 5% bottom 0;
+            background-size: cover;
             border-radius: 0;
             color: white;
         }
 
+        .jumbotron .container {
+            padding: 100px 0 60px 20px;
+        }
+
+        .jumbotron .display-3 {
+            color: rgb(255, 0, 85);
+            font-weight: 800;
+        }
+
         .btn-primary {
-            background-color: #29b1d3;
-            border-color: #29b1d3;
+            background-color: rgb(255, 0, 85);
+            border-color: rgb(255, 0, 85);
         }
 
         .btn-primary:hover {
-            background-color: #178daa;
-            border-color: #178daa;
+            background-color: rgb(197, 0, 66);
+            border-color: rgb(197, 0, 66);
         }
 
         .btn-primary:focus {
-            background-color: #178daa;
-            border-color: #178daa;
+            background-color: rgb(197, 0, 66);
+            border-color: rgb(197, 0, 66);
         }
 
         .btn-secondary {
@@ -245,6 +249,10 @@
         .btn-secondary:focus {
             background-color: #bb194c;
             border-color: #bb194c;
+        }
+
+        .font-weight-bold {
+            font-weight: 400 !important;
         }
 
         .alert-secondary {
@@ -290,18 +298,12 @@
                 object-fit: cover;
             }
 
-            .jumbotron {
-                background-size: auto 100%;
-                background-position: bottom 0 left 50%;
+            .jumbotron .display-3 {
+                padding-bottom: 20px;
             }
         }
 
         @media (max-width: 1250px) {
-            .jumbotron {
-                background-size: auto 100%;
-                background-position: right 5% bottom 0;
-            }
-
             .intro-text {
                 padding: 10px;
                 background-color: #0000004b;
@@ -364,19 +366,13 @@
         <div class="jumbotron">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-7 col-md-12">
                         <h1 class="display-3">Hello, world!</h1>
-                        <p class="intro-text">
-                            コンピュータ研究会・WINCは早稲田大学で最も長い歴史を持つコンピュータサークルです。インターカレッジサークルで、他大学の学生の参加を歓迎しています。毎週実施される定例会に加えて、3つの部門に分かれて各自の知識や経験を共有しています。また、懇親会や夏・冬合宿、早稲田祭での企画展示も行っています。
-                        </p>
                         <p>
-                            <a target="_blank" class="btn btn-primary btn-lg my-2 mr-2" href="https://2020.winc.ne.jp"
-                                role="button"><i class="fas fa-external-link-alt"></i> 新歓特設サイト</a>
-                            <a target="_blank" class="btn btn-primary btn-lg my-2 mr-2"
-                                href="./faq/" role="button"><i
-                                    class="fas fa-external-link-alt"></i>
-                                よくある質問</a>
-                            <a target="_blank" class="btn btn-primary btn-lg my-2"
+                            <a target="_blank" class="btn btn-primary btn-lg my-3 mr-2"
+                                href="https://twitter.com/winc_w" role="button"><i class="fas fa-external-link-alt"></i>
+                                体験入会は DM から</a>
+                            <a target="_blank" class="btn btn-primary btn-lg my-3"
                                 href="https://secure.register.winc.ne.jp" role="button"><i
                                     class="fas fa-external-link-alt"></i> ご入会手続き</a>
                         </p>
