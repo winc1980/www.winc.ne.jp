@@ -21,3 +21,6 @@ master ブランチが自動的にデプロイされる設定になっていま�
 
 - fix-xxx
   バグ修正用のブランチで、develop から切ってください。
+
+- branch-test-tamami 
+  最初のテスト
