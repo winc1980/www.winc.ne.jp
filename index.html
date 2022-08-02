@@ -1,1397 +1,1397 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="format-detection" content="telephone=no" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Noto Sans JP -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
-    rel="stylesheet"
-  />
-  <!-- Bootstrap -->
-  <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-    crossorigin="anonymous"
-  />
-  <!-- Font Awesome -->
-  <script
-    src="https://kit.fontawesome.com/4331e8dd09.js"
-    crossorigin="anonymous"
-  ></script>
-  <!-- Icon-Works -->
-  <link
-    rel="stylesheet"
-    href="https://flyer.2020.winc.ne.jp/icon-works.css"
-  />
-  <!-- Icons -->
-  <link
-    rel="apple-touch-icon"
-    sizes="180x180"
-    href="./icons/apple-touch-icon.png"
-  />
-  <link rel="icon" href="./icons/favicon.ico" />
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="32x32"
-    href="./icons/favicon-32x32.png"
-  />
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="16x16"
-    href="./icons/favicon-16x16.png"
-  />
-  <link rel="manifest" href="./icons/site.webmanifest" />
-  <link
-    rel="mask-icon"
-    href="./icons/safari-pinned-tab.svg"
-    color="#5bbad5"
-  />
-  <meta name="msapplication-TileColor" content="#b91d47" />
-  <meta name="theme-color" content="#ffffff" />
-  <meta name="robots" content="nofollow" />
-  <!-- Website information -->
-  <title>
-    【公式】コンピュータ研究会・WINC｜早稲田大学公認のインカレプログラミングサークル
-  </title>
-  <meta
-    name="description"
-    content="コンピュータ研究会・WINCは、1967年創立の早稲田大学公認インカレプログラミングサークルです。HPチーム、セキュリティチーム、競プロチーム、Pythonチーム、プロジェクションマッピングチームの5つの部門に分かれてIT知識を楽しく勉強しています。大学・学年・経験不問で、多様性溢れるメンバーが揃っています。"
-  />
-  <meta
-    name="keywords"
-    content="早稲田大学,プログラミング,デザイン,コンピュータ,サークル,初心者"
-  />
-  <meta property="og:url" content="https://www.winc.ne.jp" />
-  <meta
-    property="og:title"
-    content="【公式】コンピュータ研究会・WINC｜早稲田大学公認のインカレプログラミングサークル"
-  />
-  <meta
-    property="og:description"
-    content="コンピュータ研究会・WINCは、1967年創立の早稲田大学公認インカレプログラミングサークルです。HPチーム、セキュリティチーム、競プロチーム、Pythonチーム、プロジェクションマッピングチームの5つの部門に分かれてIT知識を楽しく勉強しています。大学・学年・経験不問で、多様性溢れるメンバーが揃っています。"
-  />
-  <meta
-    property="og:image"
-    content="https://www.winc.ne.jp/images/image.png"
-  />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@winc_w" />
-  <style>
-    :root {
-      --main-color-1: #e7335d;
-      --main-color-2: #ec578a;
-      --main-color-3: #ae2334;
-    }
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Noto Sans JP -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet"
+    />
+    <!-- Bootstrap -->
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <script
+        src="https://kit.fontawesome.com/4331e8dd09.js"
+        crossorigin="anonymous"
+    ></script>
+    <!-- Icon-Works -->
+    <link
+        rel="stylesheet"
+        href="https://flyer.2020.winc.ne.jp/icon-works.css"
+    />
+    <!-- Icons -->
+    <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="./icons/apple-touch-icon.png"
+    />
+    <link rel="icon" href="./icons/favicon.ico" />
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="./icons/favicon-32x32.png"
+    />
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="./icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./icons/site.webmanifest" />
+    <link
+        rel="mask-icon"
+        href="./icons/safari-pinned-tab.svg"
+        color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#b91d47" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="robots" content="nofollow" />
+    <!-- Website information -->
+    <title>
+        【公式】コンピュータ研究会・WINC｜早稲田大学公認のインカレプログラミングサークル
+    </title>
+    <meta
+        name="description"
+        content="コンピュータ研究会・WINCは、1967年創立の早稲田大学公認インカレプログラミングサークルです。HPチーム、セキュリティチーム、競プロチーム、Pythonチーム、プロジェクションマッピングチームの5つの部門に分かれてIT知識を楽しく勉強しています。大学・学年・経験不問で、多様性溢れるメンバーが揃っています。"
+    />
+    <meta
+        name="keywords"
+        content="早稲田大学,プログラミング,デザイン,コンピュータ,サークル,初心者"
+    />
+    <meta property="og:url" content="https://www.winc.ne.jp" />
+    <meta
+        property="og:title"
+        content="【公式】コンピュータ研究会・WINC｜早稲田大学公認のインカレプログラミングサークル"
+    />
+    <meta
+        property="og:description"
+        content="コンピュータ研究会・WINCは、1967年創立の早稲田大学公認インカレプログラミングサークルです。HPチーム、セキュリティチーム、競プロチーム、Pythonチーム、プロジェクションマッピングチームの5つの部門に分かれてIT知識を楽しく勉強しています。大学・学年・経験不問で、多様性溢れるメンバーが揃っています。"
+    />
+    <meta
+        property="og:image"
+        content="https://www.winc.ne.jp/images/image.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@winc_w" />
+    <style>
+        :root {
+        --main-color-1: #e7335d;
+        --main-color-2: #ec578a;
+        --main-color-3: #ae2334;
+        }
 
-    .activity .iconworks::before {
-      content: attr(data-icon);
-      font-family: icon-worksregular;
-    }
+        .activity .iconworks::before {
+        content: attr(data-icon);
+        font-family: icon-worksregular;
+        }
 
-    .activity .card ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
+        .activity .card ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        }
 
-    .activity .card {
-      width: 100%;
-      box-sizing: border-box;
-      margin: 25px 0;
-      padding: 20px;
-      background-color: #fdfdfd;
-    }
-
-    .activity .card .iconworks::before {
-      display: block;
-      width: fit-content;
-      margin: 10px auto 0;
-      font-size: 48px;
-    }
-
-    .activity .card .iconworks::before {
-      color: var(--main-color-1);
-    }
-
-    .activity .card h2 {
-      display: block;
-      width: fit-content;
-      margin: 10px auto 30px;
-      font-size: 28px;
-      font-weight: 400;
-    }
-
-    .activity .card h2 {
-      border-bottom: 2px solid var(--main-color-1);
-    }
-
-    .activity .card h3 {
-      margin: 5px 0;
-      font-size: 20px;
-      font-weight: 400;
-    }
-
-    .activity .card li {
-      width: 100%;
-      box-sizing: border-box;
-      margin: 15px 0;
-      padding: 10px;
-      background-color: #f8f8f8;
-      filter: drop-shadow(1px 1px rgba(0, 0, 0, 0.25));
-      font-size: 18px;
-      font-weight: 400;
-      cursor: pointer;
-    }
-
-    .activity .card ul li:last-of-type {
-      margin: 0;
-    }
-
-    .activity .card li {
-      border-left: 8px solid var(--main-color-1);
-    }
-
-    body {
-      font-family: 'Noto Sans JP', sans-serif;
-      font-weight: 300;
-      padding-top: 3.5rem;
-      overscroll-behavior: none;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='540' height='450' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.03'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/svg%3E");
-    }
-
-    h4 {
-      margin-top: 0.5em;
-    }
-
-    a.anchor {
-      display: block;
-      padding-top: 50px;
-      margin-top: -50px;
-    }
-
-    .google-maps {
-      position: relative;
-      padding-bottom: 75%;
-      margin-bottom: 1rem;
-      height: 0;
-      overflow: hidden;
-    }
-
-    .google-maps iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100% !important;
-      height: 100% !important;
-    }
-
-    .no-border {
-      border: none;
-    }
-
-    .no-border img {
-      border-radius: 0;
-    }
-
-    .no-border p:last-child {
-      margin-bottom: 0;
-    }
-
-    #linkAccordion ul {
-      margin-bottom: 0;
-      padding-left: 20px;
-      list-style: none;
-    }
-
-    #linkAccordion ul li a {
-      line-height: 2.5rem;
-    }
-
-    i.lg {
-      font-size: 3.5rem;
-      padding-bottom: 1rem;
-      color: #ed5485;
-    }
-
-    .btn {
-      padding: 0.5rem 1rem;
-    }
-
-    .border-accent {
-      display: block;
-      width: fit-content;
-      border-bottom: 6px solid #ed5485;
-    }
-
-    .jumbotron {
-      background-image: url(/images/background.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      border-radius: 0;
-      color: white;
-    }
-
-    .jumbotron .container {
-      padding: 100px 0 60px 20px;
-    }
-
-    .jumbotron .display-3 {
-      color: white;
-      font-weight: 800;
-    }
-
-    .btn-primary {
-      background-color: rgb(255, 0, 85);
-      border-color: rgb(255, 0, 85);
-    }
-
-    .btn-primary:hover {
-      background-color: rgb(197, 0, 66);
-      border-color: rgb(197, 0, 66);
-    }
-
-    .btn-primary:not(:disabled):not(.disabled):active {
-      background-color: rgb(197, 0, 66);
-      border-color: rgb(197, 0, 66);
-    }
-
-    .btn-primary:focus {
-      background-color: rgb(197, 0, 66);
-      border-color: rgb(197, 0, 66);
-    }
-
-    .btn-secondary {
-      background-color: #ed5485;
-      border-color: #ed5485;
-    }
-
-    .btn-secondary:hover {
-      background-color: #bb194c;
-      border-color: #bb194c;
-    }
-
-    .btn-secondary:not(:disabled):not(.disabled):active {
-      background-color: #bb194c;
-      border-color: #bb194c;
-    }
-
-    .btn-secondary:focus {
-      background-color: #bb194c;
-      border-color: #bb194c;
-    }
-
-    .font-weight-bold {
-      font-weight: 400 !important;
-    }
-
-    .alert-secondary {
-      background: rgb(233, 64, 120);
-      background: linear-gradient(
-        0deg,
-        rgba(233, 64, 120, 1) 11%,
-        rgba(236, 39, 74, 1) 100%
-      );
-      border-color: #ed5485;
-      color: white;
-    }
-
-    .alert-secondary hr {
-      border-top-color: white;
-    }
-
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-
-    iframe.calendar {
-      width: 100%;
-      min-width: 300px;
-      height: 500px;
-    }
-
-    .github-profile .card-text {
-      word-break: break-all;
-    }
-
-    @media (max-width: 767px) {
-      .github-profile .card-img-top {
+        .activity .card {
         width: 100%;
-        height: 150px;
-        object-fit: cover;
-      }
+        box-sizing: border-box;
+        margin: 25px 0;
+        padding: 20px;
+        background-color: #fdfdfd;
+        }
 
-      .jumbotron .display-3 {
-        padding-bottom: 20px;
-      }
-    }
+        .activity .card .iconworks::before {
+        display: block;
+        width: fit-content;
+        margin: 10px auto 0;
+        font-size: 48px;
+        }
 
-    @media (max-width: 1250px) {
-      .intro-text {
+        .activity .card .iconworks::before {
+        color: var(--main-color-1);
+        }
+
+        .activity .card h2 {
+        display: block;
+        width: fit-content;
+        margin: 10px auto 30px;
+        font-size: 28px;
+        font-weight: 400;
+        }
+
+        .activity .card h2 {
+        border-bottom: 2px solid var(--main-color-1);
+        }
+
+        .activity .card h3 {
+        margin: 5px 0;
+        font-size: 20px;
+        font-weight: 400;
+        }
+
+        .activity .card li {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 15px 0;
         padding: 10px;
-        background-color: #0000004b;
-        border-radius: 0.25rem;
-      }
-    }
-  </style>
-</head>
+        background-color: #f8f8f8;
+        filter: drop-shadow(1px 1px rgba(0, 0, 0, 0.25));
+        font-size: 18px;
+        font-weight: 400;
+        cursor: pointer;
+        }
 
-<body>
-  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-    <a class="navbar-brand" href="./">コンピュータ研究会・WINC</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarDefault"
-      aria-controls="navbarDefault"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarDefault">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#activity-anchor">活動内容</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#location-anchor">活動場所</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact-anchor">お問い合わせ</a>
-        </li>
-      </ul>
-      <a
-        target="_blank"
-        href="https://secure.register.winc.ne.jp/"
-        class="btn btn-primary btn-lg my-3 mr-2"
-      >
-        体験入会・本入会はこちら
-      </a>
-    </div>
-  </nav>
-  <main role="main">
-    <div class="jumbotron">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-7 col-md-12">
-            <h1 class="display-3">Hello, world!</h1>
-            <p>
-              <a
-                target="_blank"
-                class="btn btn-primary btn-lg my-3"
-                href="https://secure.register.winc.ne.jp"
-                role="button"
-              >
-                体験入会・本入会はこちら
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h2 class="font-weight-bold">1967年創立</h2>
-          <p>
-            コンピュータ研究会・WINCは早稲田大学で最も長い歴史を持つコンピュータサークルです。当会は、1967年創立の早稲田大学コンピュータ研究会と、早稲田大学情報科学研究会（WINC）が合併して誕生し、50年以上にわたって活動を続けてきました。
-          </p>
-        </div>
-        <div class="col-md-4">
-          <h2 class="font-weight-bold">インターカレッジ、学年も専攻も不問</h2>
-          <p>
-            当サークルは大学・学年・学部・学科に制限はありません。初心者も経験者も文系も理系も大歓迎です。会員の所属大学は早稲田、お茶の水女子、慶應、上智、専修、電気通信、東京、東京工業、東京理科、二松学舎、日本女子、法政、など
-          </p>
-        </div>
-        <div class="col-md-4">
-          <h2 class="font-weight-bold">公認サークル</h2>
-          <p>
-            早稲田大学の公認サークルとして、部室や会議室といった学内施設の利用が認められています。運営は早稲田大学の学生が主体となって行っています。公認サークルは安心・安全で、新入生に最適なサークルです。（当サークルの分類番号は、C-047です。）
-          </p>
-        </div>
-      </div>
+        .activity .card ul li:last-of-type {
+        margin: 0;
+        }
 
-      <!--
-              活動内容
-          -->
+        .activity .card li {
+        border-left: 8px solid var(--main-color-1);
+        }
 
-      <a id="activity-anchor" class="anchor"></a>
-      <h2
-        class="border-accent mx-auto my-5 py-1 font-weight-bold text-center"
-      >
-        <i class="lg far fa-flag"></i>
-        <br />
-        活動内容
-      </h2>
-      <p class="mx-auto text-center">
-        現在活動している部門は以下通りです。プログラミング初心者は、HPチームと競プロチーム、中級者（自学ができてコマンドが触れる人）はセキュリティチームとデータサイエンスチームに所属します。中級者はHPチームと競プロチームへの所属も可能です。初心者でも自分でどんどん学習できればセキュリティやデータサイエンスに参加することが可能であるため、まずはご相談ください。
-      </p>
-      <div class="activity">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="card information">
-              <h2>HP チーム</h2>
-              <ul class="">
-                <li>
-                  <i class="far fa-window-restore"></i>
-                  HTML/CSS
-                  <p>
-                    WINCのホームページを使用してHTML/CSSの基礎を学びます。
-                  </p>
-                </li>
-                <li>
-                  <i class="far fa-window-restore"></i>
-                  GitHub
-                  <p>
-                    GitHubを使用して、チームでプロジェクトを進める方法を学びます。
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="card information">
-              <h2>競プロチーム</h2>
-              <ul class="">
-                <li>
-                  <i class="far fa-window-restore"></i>
-                  AtCoder
-                  <p>
-                    AtCoderの過去問を解いたり、出場したりしてプログラミングを勉強します。AtCoder
-                    Beginner
-                    Contestに参加した後に、感想を言い合ったり考察をしたりする機会もあります。
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="card information">
-              <h2>セキュリティチーム</h2>
-              <ul class="">
-                <li>
-                  <i class="far fa-window-restore"></i>
-                  Linux
-                  <p>
-                    Linuxと呼ばれるOSを操作するために必要なコマンドを学習し、活用できるようになります。
-                  </p>
-                </li>
-                <li>
-                  <i class="far fa-window-restore"></i>
-                  CTF
-                  <p>
-                    CTFと呼ばれるセキュリティ競技の問題を攻撃者の視点で解くことで、セキュリティに対する理解を深めます。
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="card information">
-              <h2>データサイエンス チーム</h2>
-              <ul class="">
-                <li>
-                  <i class="far fa-window-restore"></i>
-                  コンテスト
-                  <p>KaggleやSignateなどのコンテストに参加します。</p>
-                </li>
-                <li>
-                  <i class="far fa-window-restore"></i>
-                  勉強会
-                  <p>
-                    KaggleやSignateで扱わないデータサイエンスの領域について勉強会を開きます。
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
+        body {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 300;
+        padding-top: 3.5rem;
+        overscroll-behavior: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='540' height='450' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.03'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        h4 {
+        margin-top: 0.5em;
+        }
+
+        a.anchor {
+        display: block;
+        padding-top: 50px;
+        margin-top: -50px;
+        }
+
+        .google-maps {
+        position: relative;
+        padding-bottom: 75%;
+        margin-bottom: 1rem;
+        height: 0;
+        overflow: hidden;
+        }
+
+        .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+        }
+
+        .no-border {
+        border: none;
+        }
+
+        .no-border img {
+        border-radius: 0;
+        }
+
+        .no-border p:last-child {
+        margin-bottom: 0;
+        }
+
+        #linkAccordion ul {
+        margin-bottom: 0;
+        padding-left: 20px;
+        list-style: none;
+        }
+
+        #linkAccordion ul li a {
+        line-height: 2.5rem;
+        }
+
+        i.lg {
+        font-size: 3.5rem;
+        padding-bottom: 1rem;
+        color: #ed5485;
+        }
+
+        .btn {
+        padding: 0.5rem 1rem;
+        }
+
+        .border-accent {
+        display: block;
+        width: fit-content;
+        border-bottom: 6px solid #ed5485;
+        }
+
+        .jumbotron {
+        background-image: url(/images/background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 0;
+        color: white;
+        }
+
+        .jumbotron .container {
+        padding: 100px 0 60px 20px;
+        }
+
+        .jumbotron .display-3 {
+        color: white;
+        font-weight: 800;
+        }
+
+        .btn-primary {
+        background-color: rgb(255, 0, 85);
+        border-color: rgb(255, 0, 85);
+        }
+
+        .btn-primary:hover {
+        background-color: rgb(197, 0, 66);
+        border-color: rgb(197, 0, 66);
+        }
+
+        .btn-primary:not(:disabled):not(.disabled):active {
+        background-color: rgb(197, 0, 66);
+        border-color: rgb(197, 0, 66);
+        }
+
+        .btn-primary:focus {
+        background-color: rgb(197, 0, 66);
+        border-color: rgb(197, 0, 66);
+        }
+
+        .btn-secondary {
+        background-color: #ed5485;
+        border-color: #ed5485;
+        }
+
+        .btn-secondary:hover {
+        background-color: #bb194c;
+        border-color: #bb194c;
+        }
+
+        .btn-secondary:not(:disabled):not(.disabled):active {
+        background-color: #bb194c;
+        border-color: #bb194c;
+        }
+
+        .btn-secondary:focus {
+        background-color: #bb194c;
+        border-color: #bb194c;
+        }
+
+        .font-weight-bold {
+        font-weight: 400 !important;
+        }
+
+        .alert-secondary {
+        background: rgb(233, 64, 120);
+        background: linear-gradient(
+            0deg,
+            rgba(233, 64, 120, 1) 11%,
+            rgba(236, 39, 74, 1) 100%
+        );
+        border-color: #ed5485;
+        color: white;
+        }
+
+        .alert-secondary hr {
+        border-top-color: white;
+        }
+
+        .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        }
+
+        @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+        }
+
+        iframe.calendar {
+        width: 100%;
+        min-width: 300px;
+        height: 500px;
+        }
+
+        .github-profile .card-text {
+        word-break: break-all;
+        }
+
+        @media (max-width: 767px) {
+        .github-profile .card-img-top {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .jumbotron .display-3 {
+            padding-bottom: 20px;
+        }
+        }
+
+        @media (max-width: 1250px) {
+        .intro-text {
+            padding: 10px;
+            background-color: #0000004b;
+            border-radius: 0.25rem;
+        }
+        }
+    </style>
+    </head>
+
+    <body>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+        <a class="navbar-brand" href="./">コンピュータ研究会・WINC</a>
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarDefault"
+        aria-controls="navbarDefault"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+            <a class="nav-link" href="#activity-anchor">活動内容</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#location-anchor">活動場所</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#contact-anchor">お問い合わせ</a>
+            </li>
+        </ul>
+        <a
+            target="_blank"
+            href="https://secure.register.winc.ne.jp/"
+            class="btn btn-primary btn-lg my-3 mr-2"
+        >
+            体験入会・本入会はこちら
+        </a>
         </div>
-      </div>
-
-      <!-- 
-              活動日程
-            -->
-      <h2
-        class="border-accent mx-auto my-5 py-1 font-weight-bold text-center"
-      >
-        <i class="lg far fa-compass"></i>
-        <br />
-        活動日程
-      </h2>
-      <p class="mx-auto text-center">
-        活動日程は以下のとおりです。カレンダーに反映されていない活動や、活動の詳細についてはTwitterやInstagramをご覧ください。
-      </p>
-      <div class="row d-flex justify-content-center">
-        <div class="col-lg-8">
-          <iframe
-            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&showNav=0&showDate=1&showPrint=0&showTabs=1&showCalendars=0&showTz=0&showTitle=0&src=YjZxYXZ2dm42YnZndHU0aWwyZXBhazJwbThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23D50000"
-            style="border-width: 0;"
-            width="100%"
-            height="600"
-            frameborder="0"
-            scrolling="no"
-          ></iframe>
-        </div>
-      </div>
-
-      <!--
-              活動場所
-          -->
-
-      <a id="location-anchor" class="anchor"></a>
-      <h2
-        class="border-accent mx-auto my-5 py-1 font-weight-bold text-center"
-      >
-        <i class="lg far fa-compass"></i>
-        <br />
-        活動場所
-      </h2>
-      <div class="row pt-4">
-        <div class="col-lg-8">
-          <div class="google-maps">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12950.665855253888!2d139.7334568!3d35.7590019!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d1e9f15d395%3A0xd4176c29273d4bae!2z5a2m55Sf5Lya6aSo!5e0!3m2!1sja!2sjp!4v1549801780716"
-              width="600"
-              height="450"
-              frameborder="0"
-              style="border: 0;"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <!--
-                      COVID-19 の感染拡大を防止するための取り組み
-                  -->
-
-          <p>
-            <a
-              target="_blank"
-              class="btn btn-secondary btn-block"
-              href="http://www.waseda.jp/student/gakusei/kaikan.html"
-            >
-              学生会館について
-            </a>
-          </p>
-          <p>
-            <a
-              target="_blank"
-              class="btn btn-secondary btn-block"
-              href="https://www.waseda.jp/fsci/access/"
-              role="button"
-            >
-              キャンパス間連絡バス
-            </a>
-          </p>
-        </div>
-      </div>
-      <!--
-              年間計画
-          
-
-          <a id="plan-anchor" class="anchor"></a>
-          <h2 class="border-accent mx-auto my-5 py-1 font-weight-bold text-center"><i
-                  class="lg far fa-list-alt"></i><br>年間計画</h2>
-          <h3 class="text-center font-weight-bold">4月〜8月</h3>
-          <div class="row my-5">
-              <div class="col-md-6">
-                  <img class="img-fluid lazyload" src="./images/learning.svg" alt="">
-              </div>
-              <div class="col-md-6">
-                  <h4 class="font-weight-bold">スキルを身につける！</h4>
-                  <p>たくさんの新入会員を迎えて、いよいよ活動がスタートします。夏合宿に向けて、プログラミングやデザイン、ハードウェア設計のスキルを身につけます。「何から始めれば良いか分からない…」「自分で学習を進められるか不安…」このような思いを抱くのは当然のことです。先輩会員がしっかりサポートするので大丈夫！
-                  </p>
-                  <div class="card">
-                      <div class="card-header">
-                          この時期の目標の例
-                      </div>
-                      <ul class="list-group list-group-flush">
-                          <li class="list-group-item"><i class="text-success fas fa-check"></i> 調べながらプログラムが書ける</li>
-                          <li class="list-group-item"><i class="text-success fas fa-check"></i> 身近な問題を解決するプログラムを作る
-                          </li>
-                          <li class="list-group-item"><i class="text-success fas fa-check"></i> オリジナルのウェブサイトを作る</li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-          <h3 class="text-center font-weight-bold">9月</h3>
-          <div class="row my-5">
-              <div class="col-md-6">
-                  <img class="img-fluid lazyload" src="./images/camp.svg" alt="">
-              </div>
-              <div class="col-md-6">
-                  <h4 class="font-weight-bold">オンライン夏合宿に参加する！</h4>
-                  <p>夏合宿は、これまでに学んできたことを活かす最高の機会です。今年度はオンラインで実施します。スキルのバランスを考慮して結成されるグループでソフトウェア開発に挑戦します。役割を分担して、効率よく開発を進めましょう。完成したソフトウェアは、合宿の参加者に向けて発表しましょう。<s>伊豆や河口湖周辺で様々なアクティビティも楽しみます。</s>オンラインで、レクリエーションやディナーセッションを楽しみます。
-                  </p>
-                  <div class="card">
-                      <div class="card-header">
-                          この時期の目標の例
-                      </div>
-                      <ul class="list-group list-group-flush">
-                          <li class="list-group-item"><i
-                                  class="text-success fas fa-check"></i>　複数人で役割を分担してソフトウェアを開発できる</li>
-                          <li class="list-group-item"><i
-                                  class="text-success fas fa-check"></i>　開発したソフトウェアを発表して他の人に使ってもらう</li>
-                          <li class="list-group-item"><i
-                                  class="text-success fas fa-check"></i>　フィードバックをもとにソフトウェアを改善できる</li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-          <h3 class="text-center font-weight-bold">10月〜11月</h3>
-          <div class="row my-5">
-              <div class="col-md-6">
-                  <img class="img-fluid lazyload" src="./images/project.svg" alt="">
-              </div>
-              <div class="col-md-6">
-                  <h4 class="font-weight-bold">早稲田祭に出店する！</h4>
-                  <p>プログラミング部門、デザイン部門、ハロプロ部門に分かれて、または協力して早稲田祭に出店します。早大生なら一度は早稲田祭に参加するべきです！今年度、早稲田祭はオンラインで開催されます。過年度には、タブレットで落書きができるプリクラシステムや、ARを活用したスタンプラリーアプリを開発しました。開発費を回収するためにマネタイズも行います。
-                  </p>
-                  <div class="card">
-                      <div class="card-header">
-                          この時期の目標の例
-                      </div>
-                      <ul class="list-group list-group-flush">
-                          <li class="list-group-item"><i class="text-success fas fa-check"></i> グループで早稲田祭に出店する</li>
-                          <li class="list-group-item"><i class="text-success fas fa-check"></i> 様々な開発手法について説明できる</li>
-                          <li class="list-group-item"><i class="text-success fas fa-check"></i> 仲間と大学生活を満喫する</li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-          <h3 class="text-center font-weight-bold">12月〜2月</h3>
-          <div class="row my-5">
-              <div class="col-md-6">
-                  <img class="img-fluid lazyload" src="./images/win.svg" alt="">
-              </div>
-              <div class="col-md-6">
-                  <h4 class="font-weight-bold">コンテストに挑戦！</h4>
-                  <p>一年を通して様々なスキルが身についたはず！積極的に大学外のイベントに足を運びましょう！ハッカソン、勉強会、コンテスト、コンペといった様々なイベントの情報を会員に配信しています。ぜひ活用してください！開発したソフトウェアをインターネットで公開して、たくさんの人に使ってもらうのも良いでしょう。
-                  </p>
-                  <div class="card">
-                      <div class="card-header">
-                          この時期の目標の例
-                      </div>
-                      <ul class="list-group list-group-flush">
-                          <li class="list-group-item"><i class="text-success fas fa-check"></i> ハッカソンや外部の勉強会に参加する</li>
-                          <li class="list-group-item"><i class="text-success fas fa-check"></i> コンテストやコンペに挑戦する</li>
-                          <li class="list-group-item"><i class="text-success fas fa-check"></i>
-                              開発したソフトウェアをインターネットで公開する</li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-          -->
-      <!--
-              お問い合わせ
-          -->
-
-      <a id="contact-anchor" class="anchor"></a>
-      <h2
-        class="border-accent mx-auto my-5 py-1 font-weight-bold text-center"
-      >
-        <i class="lg far fa-envelope"></i>
-        <br />
-        よくあるご質問
-      </h2>
-      <div class="accordion" id="contactAccordion">
-        <div class="card">
-          <div class="card-header" id="contactHeadingOne">
-            <h2 class="mb-0">
-              <button
-                class="btn btn-link"
-                type="button"
-                data-toggle="collapse"
-                data-target="#contactCollapseOne"
-                aria-expanded="true"
-                aria-controls="contactCollapseOne"
-              >
-                必ずお読みください
-              </button>
-            </h2>
-          </div>
-          <div
-            id="contactCollapseOne"
-            class="collapse show"
-            aria-labelledby="contactHeadingOne"
-            data-parent="#contactAccordion"
-          >
-            <div class="card-body">
-              <p>
-                通常2週間以内に返信いたします。WINCに入会をご希望の方からよくいただくご質問はこちらです。ご参照ください。
-              </p>
-              <p>よくあるご質問（FAQ）</p>
-              <p>
-                以下の項目にご同意の上お問い合わせくださいますようお願いいたします。
-              </p>
-              <ul>
-                <li>
-                  お問い合わせいただいた内容によってはお答えいたしかねる場合がございます。
-                </li>
-                <li>
-                  ご入力いただいた内容に不足や誤りがある場合にはご返信いたしかねます。
-                </li>
-                <li>
-                  ご入力いただいた個人情報は、お問い合わせへのご対応の目的でのみ使用します。
-                </li>
-                <li>
-                  事前の通知なく、ご入力いただいた個人情報を当会の会員または早稲田大学に開示する場合がございます。
-                </li>
-                <li>
-                  事前の通知なく、ご入力いただいた個人情報を法令に基づく要請に応じて開示する場合がございます。
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="contactHeadingTwo">
-            <h2 class="mb-0">
-              <button
-                class="btn btn-link collapsed"
-                type="button"
-                data-toggle="collapse"
-                data-target="#contactCollapseTwo"
-                aria-expanded="true"
-                aria-controls="contactCollapseTwo"
-              >
-                取材について
-              </button>
-            </h2>
-          </div>
-          <div
-            id="contactCollapseTwo"
-            class="collapse"
-            aria-labelledby="contactHeadingTwo"
-            data-parent="#contactAccordion"
-          >
-            <div class="card-body">
-              <p>
-                取材のご依頼に関しましては、以下の項目にご同意の上ご連絡くださいますようお願いいたします。
-              </p>
-              <ul>
-                <li>一週間程度の余裕をもってお問い合わせください。</li>
-                <li>
-                  原則として、
-                  <a
-                    href="https://www.waseda.jp/top/about/work/organizations/public-relations"
-                  >
-                    早稲田大学広報課
-                  </a>
-                  への取材申込が必要となります。
-                </li>
-                <li>
-                  早稲田大学広報課への申請内容のコピーを当会にご提出いただきます。
-                </li>
-                <li>
-                  早稲田大学敷地内での取材・撮影（YouTube等含む）には、広報課の明示的な許可が必要です。
-                </li>
-                <li>
-                  早稲田大学にかかわる映像・写真の使用は、本学の教育・研究・スポーツに関する内容に限り、許可されます。
-                </li>
-              </ul>
-              <p>
-                詳細につきましては、
-                <a href="https://www.waseda.jp/top/for-business/media">
-                  早稲田大学のウェブサイト
+    </nav>
+    <main role="main">
+        <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-7 col-md-12">
+                <h1 class="display-3">Hello, world!</h1>
+                <p>
+                <a
+                    target="_blank"
+                    class="btn btn-primary btn-lg my-3"
+                    href="https://secure.register.winc.ne.jp"
+                    role="button"
+                >
+                    体験入会・本入会はこちら
                 </a>
-                をご覧ください。
-              </p>
+                </p>
             </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="contactHeadingThree">
-            <h2 class="mb-0">
-              <button
-                class="btn btn-link collapsed"
-                type="button"
-                data-toggle="collapse"
-                data-target="#contactCollapseThree"
-                aria-expanded="true"
-                aria-controls="contactCollapseThree"
-              >
-                お問い合わせ
-              </button>
-            </h2>
-          </div>
-          <div
-            id="contactCollapseThree"
-            class="collapse"
-            aria-labelledby="contactHeadingThree"
-            data-parent="#contactAccordion"
-          >
-            <div class="card-group">
-              <div class="card no-border">
-                <img
-                  src="./images/typing.jpg"
-                  class="card-img-top lazyload"
-                  alt=""
-                />
-                <div class="card-body">
-                  <h5 class="card-title">お問い合わせフォームから</h5>
-                  <p class="card-text">
-                    次のお問い合わせフォームをご利用ください。
-                  </p>
-                  <p>
-                    <a
-                      target="_blank"
-                      class="btn btn-secondary"
-                      href="https://forms.gle/WAAfwJ3FZS9idtCU8"
-                      role="button"
-                    >
-                      <i class="fas fa-external-link-alt"></i>
-                      お問い合わせフォーム
-                    </a>
-                  </p>
-                </div>
-              </div>
-              <div class="card no-border">
-                <img
-                  src="./images/texting.jpg"
-                  class="card-img-top lazyload"
-                  alt=""
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Twitter から</h5>
-                  <p class="card-text">
-                    Twitter で @winc_w
-                    にダイレクトメッセージを送ってください。
-                  </p>
-                  <p>
-                    <a
-                      target="_blank"
-                      class="btn btn-secondary"
-                      href="https://twitter.com/winc_w"
-                    >
-                      <i class="fab fa-twitter"></i>
-                      Twitter（@winc_w）
-                    </a>
-                  </p>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
+        </div>
+        <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+            <h2 class="font-weight-bold">1967年創立</h2>
+            <p>
+                コンピュータ研究会・WINCは早稲田大学で最も長い歴史を持つコンピュータサークルです。当会は、1967年創立の早稲田大学コンピュータ研究会と、早稲田大学情報科学研究会（WINC）が合併して誕生し、50年以上にわたって活動を続けてきました。
+            </p>
+            </div>
+            <div class="col-md-4">
+            <h2 class="font-weight-bold">インターカレッジ、学年も専攻も不問</h2>
+            <p>
+                当サークルは大学・学年・学部・学科に制限はありません。初心者も経験者も文系も理系も大歓迎です。会員の所属大学は早稲田、お茶の水女子、慶應、上智、専修、電気通信、東京、東京工業、東京理科、二松学舎、日本女子、法政、など
+            </p>
+            </div>
+            <div class="col-md-4">
+            <h2 class="font-weight-bold">公認サークル</h2>
+            <p>
+                早稲田大学の公認サークルとして、部室や会議室といった学内施設の利用が認められています。運営は早稲田大学の学生が主体となって行っています。公認サークルは安心・安全で、新入生に最適なサークルです。（当サークルの分類番号は、C-047です。）
+            </p>
+            </div>
+        </div>
 
-      <!--
-              リンク
-          -->
+        <!--
+                活動内容
+            -->
 
-      <a id="link-anchor" class="anchor"></a>
-      <h2
-        class="border-accent mx-auto my-5 py-1 font-weight-bold text-center"
-      >
-        <i class="lg far fa-star"></i>
-        <br />
-        リンク
-      </h2>
-      <div class="accordion" id="linkAccordion">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h2 class="mb-0">
-              <button
-                class="btn btn-link"
-                type="button"
-                data-toggle="collapse"
-                data-target="#linkCollapseOne"
-                aria-expanded="true"
-                aria-controls="linkCollapseOne"
-              >
-                <i class="fas fa-school fa-fw"></i>
-                早稲田大学
-              </button>
-            </h2>
-          </div>
-          <div
-            id="linkCollapseOne"
-            class="collapse"
-            aria-labelledby="linkHeadingOne"
-            data-parent="#linkAccordion"
-          >
-            <div class="card-body">
-              <ul>
-                <li>
-                  <a target="_blank" href="https://www.waseda.jp/top/">
-                    <i class="fas fa-external-link-alt"></i>
-                    早稲田大学
-                  </a>
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://www.waseda.jp/top/about/work/organizations/public-relations"
-                  >
-                    <i class="fas fa-external-link-alt"></i>
-                    早稲田大学広報課
-                  </a>
-                </li>
-                <li>
-                  <a target="_blank" href="http://www.waseda.jp/student/">
-                    <i class="fas fa-external-link-alt"></i>
-                    早稲田大学学生部
-                  </a>
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://www.waseda.jp/student/gakusei/kaikan.html"
-                  >
-                    <i class="fas fa-external-link-alt"></i>
-                    早稲田大学学生会館
-                  </a>
-                </li>
-                <li>
-                  <a target="_blank" href="http://www.waseda.jp/navi/">
-                    <i class="fas fa-external-link-alt"></i>
-                    早稲田大学ITサービスナビ
-                  </a>
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://www.waseda.jp/library/search_find/off-campus-access/"
-                  >
-                    <i class="fas fa-external-link-alt"></i>
-                    早稲田大学図書館学外アクセス
-                  </a>
-                </li>
-              </ul>
+        <a id="activity-anchor" class="anchor"></a>
+        <h2
+            class="border-accent mx-auto my-5 py-1 font-weight-bold text-center"
+        >
+            <i class="lg far fa-flag"></i>
+            <br />
+            活動内容
+        </h2>
+        <p class="mx-auto text-center">
+            現在活動している部門は以下通りです。プログラミング初心者は、HPチームと競プロチーム、中級者（自学ができてコマンドが触れる人）はセキュリティチームとデータサイエンスチームに所属します。中級者はHPチームと競プロチームへの所属も可能です。初心者でも自分でどんどん学習できればセキュリティやデータサイエンスに参加することが可能であるため、まずはご相談ください。
+        </p>
+        <div class="activity">
+            <div class="row">
+            <div class="col-lg-6">
+                <div class="card information">
+                <h2>HP チーム</h2>
+                <ul class="">
+                    <li>
+                    <i class="far fa-window-restore"></i>
+                    HTML/CSS
+                    <p>
+                        WINCのホームページを使用してHTML/CSSの基礎を学びます。
+                    </p>
+                    </li>
+                    <li>
+                    <i class="far fa-window-restore"></i>
+                    GitHub
+                    <p>
+                        GitHubを使用して、チームでプロジェクトを進める方法を学びます。
+                    </p>
+                    </li>
+                </ul>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="linkHeadingTwo">
-            <h2 class="mb-0">
-              <button
-                class="btn btn-link collapsed"
-                type="button"
-                data-toggle="collapse"
-                data-target="#linkCollapseTwo"
-                aria-expanded="false"
-                aria-controls="linkCollapseTwo"
-              >
-                <i class="far fa-file-alt fa-fw"></i>
-                ドキュメント
-              </button>
-            </h2>
-          </div>
-          <div
-            id="linkCollapseTwo"
-            class="collapse"
-            aria-labelledby="linkHeadingTwo"
-            data-parent="#linkAccordion"
-          >
-            <div class="card-body">
-              <ul>
-                <li>
-                  <a target="_blank" href="https://devdocs.io/cpp/">
-                    <i class="fas fa-external-link-alt"></i>
-                    C++ Documentation
-                  </a>
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://docs.oracle.com/en/java/javase/11/"
-                  >
-                    <i class="fas fa-external-link-alt"></i>
-                    JDK 11 Documentation
-                  </a>
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://kotlinlang.org/docs/reference/"
-                  >
-                    <i class="fas fa-external-link-alt"></i>
-                    Kotlin Documentation
-                  </a>
-                </li>
-                <li>
-                  <a target="_blank" href="https://docs.python.org/3.7/">
-                    <i class="fas fa-external-link-alt"></i>
-                    Python 3.7 Documentation
-                  </a>
-                </li>
-                <li>
-                  <a target="_blank" href="https://golang.org/doc/">
-                    <i class="fas fa-external-link-alt"></i>
-                    Go Documentation
-                  </a>
-                </li>
-                <li>
-                  <a target="_blank" href="https://developers.google.com/">
-                    <i class="fas fa-external-link-alt"></i>
-                    Google Developers
-                  </a>
-                  <br />
-                  Googleの様々なプロダクトのドキュメント
-                </li>
-                <li>
-                  <a target="_blank" href="https://developer.mozilla.org/ja/">
-                    <i class="fas fa-external-link-alt"></i>
-                    MDN Web Docs
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="linkHeadingThree">
-            <h2 class="mb-0">
-              <button
-                class="btn btn-link collapsed"
-                type="button"
-                data-toggle="collapse"
-                data-target="#linkCollapseThree"
-                aria-expanded="false"
-                aria-controls="linkCollapseThree"
-              >
-                <i class="far fa-file-code fa-fw"></i>
-                競技プログラミング
-              </button>
-            </h2>
-          </div>
-          <div
-            id="linkCollapseThree"
-            class="collapse"
-            aria-labelledby="linkHeadingThree"
-            data-parent="#linkAccordion"
-          >
-            <div class="card-body">
-              <ul>
-                <li>
-                  <a target="_blank" href="https://atcoder.jp/">
-                    <i class="fas fa-external-link-alt"></i>
+            <div class="col-lg-6">
+                <div class="card information">
+                <h2>競プロチーム</h2>
+                <ul class="">
+                    <li>
+                    <i class="far fa-window-restore"></i>
                     AtCoder
-                  </a>
-                </li>
-                <li>
-                  <a target="_blank" href="https://icpc.baylor.edu/">
-                    <i class="fas fa-external-link-alt"></i>
-                    ICPC
-                  </a>
-                </li>
-                <li>
-                  <a target="_blank" href="https://icpc.iisf.or.jp/">
-                    <i class="fas fa-external-link-alt"></i>
-                    ICPC (IISF)
-                  </a>
-                </li>
-              </ul>
+                    <p>
+                        AtCoderの過去問を解いたり、出場したりしてプログラミングを勉強します。AtCoder
+                        Beginner
+                        Contestに参加した後に、感想を言い合ったり考察をしたりする機会もあります。
+                    </p>
+                    </li>
+                </ul>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="linkHeadingFour">
-            <h2 class="mb-0">
-              <button
-                class="btn btn-link collapsed"
-                type="button"
-                data-toggle="collapse"
-                data-target="#linkCollapseFour"
-                aria-expanded="false"
-                aria-controls="linkCollapseFour"
-              >
-                <i class="fas fa-database fa-fw"></i>
-                データサイエンス
-              </button>
-            </h2>
-          </div>
-          <div
-            id="linkCollapseFour"
-            class="collapse"
-            aria-labelledby="linkHeadingFour"
-            data-parent="#linkAccordion"
-          >
-            <div class="card-body">
-              <ul>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://colab.research.google.com/"
-                  >
-                    <i class="fas fa-external-link-alt"></i>
-                    Colaboratory
-                  </a>
-                </li>
-                <li>
-                  <a target="_blank" href="https://www.kaggle.com/">
-                    <i class="fas fa-external-link-alt"></i>
-                    Kaggle
-                  </a>
-                </li>
-                <li>
-                  <a target="_blank" href="https://grow.google/intl/ALL_jp/">
-                    <i class="fas fa-external-link-alt"></i>
-                    Grow with Google
-                  </a>
-                  <br />
-                  Googleが提供する多様なオンライン講座
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://developers.google.com/machine-learning/crash-course/"
-                  >
-                    <i class="fas fa-external-link-alt"></i>
-                    Machine Learning Crash Course
-                  </a>
-                  <br />
-                  Googleが提供する機械学習のオンライン講座
-                </li>
-              </ul>
+            <div class="col-lg-6">
+                <div class="card information">
+                <h2>セキュリティチーム</h2>
+                <ul class="">
+                    <li>
+                    <i class="far fa-window-restore"></i>
+                    Linux
+                    <p>
+                        Linuxと呼ばれるOSを操作するために必要なコマンドを学習し、活用できるようになります。
+                    </p>
+                    </li>
+                    <li>
+                    <i class="far fa-window-restore"></i>
+                    CTF
+                    <p>
+                        CTFと呼ばれるセキュリティ競技の問題を攻撃者の視点で解くことで、セキュリティに対する理解を深めます。
+                    </p>
+                    </li>
+                </ul>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="linkHeadingFive">
-            <h2 class="mb-0">
-              <button
-                class="btn btn-link collapsed"
-                type="button"
-                data-toggle="collapse"
-                data-target="#linkCollapseFive"
-                aria-expanded="false"
-                aria-controls="linkCollapseFive"
-              >
-                <i class="fas fa-graduation-cap fa-fw"></i>
-                学生特典を利用する
-              </button>
-            </h2>
-          </div>
-          <div
-            id="linkCollapseFive"
-            class="collapse"
-            aria-labelledby="linkHeadingFive"
-            data-parent="#linkAccordion"
-          >
-            <div class="card-body">
-              <ul>
-                <li>
-                  <a target="_blank" href="https://education.github.com/">
-                    <i class="fas fa-external-link-alt"></i>
-                    GitHub Education
-                  </a>
-                  <br />
-                  GitHub ProやJETBRAINSのIDEが無償で利用できる
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://azure.microsoft.com/ja-jp/free/students/"
-                  >
-                    <i class="fas fa-external-link-alt"></i>
-                    Azure for Students
-                  </a>
-                  <br />
-                  クレジットカード不要でマイクロソフトのクラウドプラットフォームが利用できる
-                </li>
-              </ul>
+            <div class="col-lg-6">
+                <div class="card information">
+                <h2>データサイエンス チーム</h2>
+                <ul class="">
+                    <li>
+                    <i class="far fa-window-restore"></i>
+                    コンテスト
+                    <p>KaggleやSignateなどのコンテストに参加します。</p>
+                    </li>
+                    <li>
+                    <i class="far fa-window-restore"></i>
+                    勉強会
+                    <p>
+                        KaggleやSignateで扱わないデータサイエンスの領域について勉強会を開きます。
+                    </p>
+                    </li>
+                </ul>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="linkHeadingSix">
-            <h2 class="mb-0">
-              <button
-                class="btn btn-link collapsed"
-                type="button"
-                data-toggle="collapse"
-                data-target="#linkCollapseSix"
-                aria-expanded="false"
-                aria-controls="linkCollapseSix"
-              >
-                <i class="far fa-calendar-alt fa-fw"></i>
-                コンテストに応募する
-              </button>
-            </h2>
-          </div>
-          <div
-            id="linkCollapseSix"
-            class="collapse"
-            aria-labelledby="linkHeadingSix"
-            data-parent="#linkAccordion"
-          >
-            <div class="card-body">
-              <ul>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://imaginecup.microsoft.com/ja-jp"
-                  >
-                    <i class="fas fa-external-link-alt"></i>
-                    Imagine Cup
-                  </a>
-                  <br />
-                  マイクロソフトが2003年から毎年実施している学生開発者向けコンペティション
-                </li>
-                <li>
-                  <a target="_blank" href="https://u22procon.com/">
-                    <i class="fas fa-external-link-alt"></i>
-                    U-22プログラミング・コンテスト
-                  </a>
-                  <br />
-                  22歳以下のエンジニアを対象としたコンテストで、経済産業省や文部科学省が後援している
-                </li>
-              </ul>
             </div>
-          </div>
         </div>
-      </div>
-      <hr />
-    </div>
-  </main>
 
-  <footer class="container">
-    <p>
-      © 2020 Copyright:
-      <a href="./">コンピュータ研究会・WINC</a>
-    </p>
-    <p>
-      <a href="https://www.freepik.com/free-photos-vectors/banner">
-        Banner vector created by katemangostar - www.freepik.com
-      </a>
-      /
-      <a href="https://www.freepik.com/free-photos-vectors/technology">
-        Technology vector created by stories - www.freepik.com
-      </a>
-      /
-      <a href="https://www.freepik.com/free-photos-vectors/people">
-        People vector created by pch.vector - www.freepik.com
-      </a>
-      /
-      <a href="https://www.freepik.com/free-photos-vectors/people">
-        People vector created by pikisuperstar - www.freepik.com
-      </a>
-      /
-      <a href="https://www.freepik.com/free-photos-vectors/business">
-        Business vector created by freepik - www.freepik.com
-      </a>
-    </p>
-  </footer>
+        <!-- 
+                活動日程
+                -->
+        <h2
+            class="border-accent mx-auto my-5 py-1 font-weight-bold text-center"
+        >
+            <i class="lg far fa-compass"></i>
+            <br />
+            活動日程
+        </h2>
+        <p class="mx-auto text-center">
+            活動日程は以下のとおりです。カレンダーに反映されていない活動や、活動の詳細についてはTwitterやInstagramをご覧ください。
+        </p>
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+            <iframe
+                src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&showNav=0&showDate=1&showPrint=0&showTabs=1&showCalendars=0&showTz=0&showTitle=0&src=YjZxYXZ2dm42YnZndHU0aWwyZXBhazJwbThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23D50000"
+                style="border-width: 0;"
+                width="100%"
+                height="600"
+                frameborder="0"
+                scrolling="no"
+            ></iframe>
+            </div>
+        </div>
 
-  <!-- jQuery -->
-  <script
-    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"
-  ></script>
-  <!-- Popper-->
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"
-  ></script>
-  <!-- Bootstrap -->
-  <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"
-  ></script>
-  <!-- visitCount -->
-  <script>
-    let visitCount = localStorage.getItem('visitCount')
-    let campaign = localStorage.getItem('campaign')
+        <!--
+                活動場所
+            -->
 
-    if (visitCount) {
-      visitCount++
-    } else {
-      visitCount = 1
-      campaign = 'on'
-    }
-    localStorage.setItem('visitCount', visitCount)
-    localStorage.setItem('campaign', campaign)
+        <a id="location-anchor" class="anchor"></a>
+        <h2
+            class="border-accent mx-auto my-5 py-1 font-weight-bold text-center"
+        >
+            <i class="lg far fa-compass"></i>
+            <br />
+            活動場所
+        </h2>
+        <div class="row pt-4">
+            <div class="col-lg-8">
+            <div class="google-maps">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12950.665855253888!2d139.7334568!3d35.7590019!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d1e9f15d395%3A0xd4176c29273d4bae!2z5a2m55Sf5Lya6aSo!5e0!3m2!1sja!2sjp!4v1549801780716"
+                width="600"
+                height="450"
+                frameborder="0"
+                style="border: 0;"
+                allowfullscreen
+                ></iframe>
+            </div>
+            </div>
+            <div class="col-lg-4">
+            <!--
+                        COVID-19 の感染拡大を防止するための取り組み
+                    -->
 
-    if (visitCount % 5 === 2 && campaign !== 'off') {
-      $('#campaignModalCenter').modal()
-    }
+            <p>
+                <a
+                target="_blank"
+                class="btn btn-secondary btn-block"
+                href="http://www.waseda.jp/student/gakusei/kaikan.html"
+                >
+                学生会館について
+                </a>
+            </p>
+            <p>
+                <a
+                target="_blank"
+                class="btn btn-secondary btn-block"
+                href="https://www.waseda.jp/fsci/access/"
+                role="button"
+                >
+                キャンパス間連絡バス
+                </a>
+            </p>
+            </div>
+        </div>
+        <!--
+                年間計画
+            
 
-    $('#campaignCheck').change(() => {
-      $('#campaignCheck').prop('checked') === true
-        ? (campaign = 'off')
-        : (campaign = 'on')
-      localStorage.setItem('campaign', campaign)
-    })
-  </script>
-  <!-- Landbot.io -->
-  <script
-    SameSite="None; Secure"
-    src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"
-  ></script>
-  <script>
-    var myLandbot = new LandbotLivechat({
-      index: 'https://landbot.io/u/H-427162-34ICKC8TZLYFGVUB/index.html',
-    })
-  </script>
-  <!-- GitHub Profile -->
-  <script>
-    function fetchUserData(username) {
-      return fetch('./github/' + username + '.json').then((response) => {
-        return response.json()
-      })
-    }
+            <a id="plan-anchor" class="anchor"></a>
+            <h2 class="border-accent mx-auto my-5 py-1 font-weight-bold text-center"><i
+                    class="lg far fa-list-alt"></i><br>年間計画</h2>
+            <h3 class="text-center font-weight-bold">4月〜8月</h3>
+            <div class="row my-5">
+                <div class="col-md-6">
+                    <img class="img-fluid lazyload" src="./images/learning.svg" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h4 class="font-weight-bold">スキルを身につける！</h4>
+                    <p>たくさんの新入会員を迎えて、いよいよ活動がスタートします。夏合宿に向けて、プログラミングやデザイン、ハードウェア設計のスキルを身につけます。「何から始めれば良いか分からない…」「自分で学習を進められるか不安…」このような思いを抱くのは当然のことです。先輩会員がしっかりサポートするので大丈夫！
+                    </p>
+                    <div class="card">
+                        <div class="card-header">
+                            この時期の目標の例
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><i class="text-success fas fa-check"></i> 調べながらプログラムが書ける</li>
+                            <li class="list-group-item"><i class="text-success fas fa-check"></i> 身近な問題を解決するプログラムを作る
+                            </li>
+                            <li class="list-group-item"><i class="text-success fas fa-check"></i> オリジナルのウェブサイトを作る</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h3 class="text-center font-weight-bold">9月</h3>
+            <div class="row my-5">
+                <div class="col-md-6">
+                    <img class="img-fluid lazyload" src="./images/camp.svg" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h4 class="font-weight-bold">オンライン夏合宿に参加する！</h4>
+                    <p>夏合宿は、これまでに学んできたことを活かす最高の機会です。今年度はオンラインで実施します。スキルのバランスを考慮して結成されるグループでソフトウェア開発に挑戦します。役割を分担して、効率よく開発を進めましょう。完成したソフトウェアは、合宿の参加者に向けて発表しましょう。<s>伊豆や河口湖周辺で様々なアクティビティも楽しみます。</s>オンラインで、レクリエーションやディナーセッションを楽しみます。
+                    </p>
+                    <div class="card">
+                        <div class="card-header">
+                            この時期の目標の例
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><i
+                                    class="text-success fas fa-check"></i>　複数人で役割を分担してソフトウェアを開発できる</li>
+                            <li class="list-group-item"><i
+                                    class="text-success fas fa-check"></i>　開発したソフトウェアを発表して他の人に使ってもらう</li>
+                            <li class="list-group-item"><i
+                                    class="text-success fas fa-check"></i>　フィードバックをもとにソフトウェアを改善できる</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h3 class="text-center font-weight-bold">10月〜11月</h3>
+            <div class="row my-5">
+                <div class="col-md-6">
+                    <img class="img-fluid lazyload" src="./images/project.svg" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h4 class="font-weight-bold">早稲田祭に出店する！</h4>
+                    <p>プログラミング部門、デザイン部門、ハロプロ部門に分かれて、または協力して早稲田祭に出店します。早大生なら一度は早稲田祭に参加するべきです！今年度、早稲田祭はオンラインで開催されます。過年度には、タブレットで落書きができるプリクラシステムや、ARを活用したスタンプラリーアプリを開発しました。開発費を回収するためにマネタイズも行います。
+                    </p>
+                    <div class="card">
+                        <div class="card-header">
+                            この時期の目標の例
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><i class="text-success fas fa-check"></i> グループで早稲田祭に出店する</li>
+                            <li class="list-group-item"><i class="text-success fas fa-check"></i> 様々な開発手法について説明できる</li>
+                            <li class="list-group-item"><i class="text-success fas fa-check"></i> 仲間と大学生活を満喫する</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h3 class="text-center font-weight-bold">12月〜2月</h3>
+            <div class="row my-5">
+                <div class="col-md-6">
+                    <img class="img-fluid lazyload" src="./images/win.svg" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h4 class="font-weight-bold">コンテストに挑戦！</h4>
+                    <p>一年を通して様々なスキルが身についたはず！積極的に大学外のイベントに足を運びましょう！ハッカソン、勉強会、コンテスト、コンペといった様々なイベントの情報を会員に配信しています。ぜひ活用してください！開発したソフトウェアをインターネットで公開して、たくさんの人に使ってもらうのも良いでしょう。
+                    </p>
+                    <div class="card">
+                        <div class="card-header">
+                            この時期の目標の例
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><i class="text-success fas fa-check"></i> ハッカソンや外部の勉強会に参加する</li>
+                            <li class="list-group-item"><i class="text-success fas fa-check"></i> コンテストやコンペに挑戦する</li>
+                            <li class="list-group-item"><i class="text-success fas fa-check"></i>
+                                開発したソフトウェアをインターネットで公開する</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            -->
+        <!--
+                お問い合わせ
+            -->
 
-    let githubProfileCards = document.querySelectorAll('.github-profile')
-    githubProfileCards.forEach((githubProfileCard) => {
-      fetchUserData(githubProfileCard.dataset.username).then((data) => {
-        let usericon = githubProfileCard.querySelector('img.card-img-top')
-        usericon.src = data.avatar_url
-        usericon.outerHTML =
-          '<a target="_blank" href="' +
-          data.html_url +
-          '">' +
-          usericon.outerHTML +
-          '</a>'
-        let name = githubProfileCard.querySelector('.name')
-        name.innerHTML = name.innerHTML + data.name
-        let username = githubProfileCard.querySelector('.username')
-        username.innerHTML = username.innerHTML + ' ' + data.login
-        let love = githubProfileCard.querySelector('.love')
-        love.innerHTML = love.innerHTML + ' ' + data.love
-        let company = githubProfileCard.querySelector('.company')
-        company.innerHTML = company.innerHTML + ' ' + data.company
-        // Tooltip
-        $(function () {
-          $('[data-toggle="tooltip"]').tooltip()
+        <a id="contact-anchor" class="anchor"></a>
+        <h2
+            class="border-accent mx-auto my-5 py-1 font-weight-bold text-center"
+        >
+            <i class="lg far fa-envelope"></i>
+            <br />
+            よくあるご質問
+        </h2>
+        <div class="accordion" id="contactAccordion">
+            <div class="card">
+            <div class="card-header" id="contactHeadingOne">
+                <h2 class="mb-0">
+                <button
+                    class="btn btn-link"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#contactCollapseOne"
+                    aria-expanded="true"
+                    aria-controls="contactCollapseOne"
+                >
+                    必ずお読みください
+                </button>
+                </h2>
+            </div>
+            <div
+                id="contactCollapseOne"
+                class="collapse show"
+                aria-labelledby="contactHeadingOne"
+                data-parent="#contactAccordion"
+            >
+                <div class="card-body">
+                <p>
+                    通常2週間以内に返信いたします。WINCに入会をご希望の方からよくいただくご質問はこちらです。ご参照ください。
+                </p>
+                <p>よくあるご質問（FAQ）</p>
+                <p>
+                    以下の項目にご同意の上お問い合わせくださいますようお願いいたします。
+                </p>
+                <ul>
+                    <li>
+                    お問い合わせいただいた内容によってはお答えいたしかねる場合がございます。
+                    </li>
+                    <li>
+                    ご入力いただいた内容に不足や誤りがある場合にはご返信いたしかねます。
+                    </li>
+                    <li>
+                    ご入力いただいた個人情報は、お問い合わせへのご対応の目的でのみ使用します。
+                    </li>
+                    <li>
+                    事前の通知なく、ご入力いただいた個人情報を当会の会員または早稲田大学に開示する場合がございます。
+                    </li>
+                    <li>
+                    事前の通知なく、ご入力いただいた個人情報を法令に基づく要請に応じて開示する場合がございます。
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header" id="contactHeadingTwo">
+                <h2 class="mb-0">
+                <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#contactCollapseTwo"
+                    aria-expanded="true"
+                    aria-controls="contactCollapseTwo"
+                >
+                    取材について
+                </button>
+                </h2>
+            </div>
+            <div
+                id="contactCollapseTwo"
+                class="collapse"
+                aria-labelledby="contactHeadingTwo"
+                data-parent="#contactAccordion"
+            >
+                <div class="card-body">
+                <p>
+                    取材のご依頼に関しましては、以下の項目にご同意の上ご連絡くださいますようお願いいたします。
+                </p>
+                <ul>
+                    <li>一週間程度の余裕をもってお問い合わせください。</li>
+                    <li>
+                    原則として、
+                    <a
+                        href="https://www.waseda.jp/top/about/work/organizations/public-relations"
+                    >
+                        早稲田大学広報課
+                    </a>
+                    への取材申込が必要となります。
+                    </li>
+                    <li>
+                    早稲田大学広報課への申請内容のコピーを当会にご提出いただきます。
+                    </li>
+                    <li>
+                    早稲田大学敷地内での取材・撮影（YouTube等含む）には、広報課の明示的な許可が必要です。
+                    </li>
+                    <li>
+                    早稲田大学にかかわる映像・写真の使用は、本学の教育・研究・スポーツに関する内容に限り、許可されます。
+                    </li>
+                </ul>
+                <p>
+                    詳細につきましては、
+                    <a href="https://www.waseda.jp/top/for-business/media">
+                    早稲田大学のウェブサイト
+                    </a>
+                    をご覧ください。
+                </p>
+                </div>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header" id="contactHeadingThree">
+                <h2 class="mb-0">
+                <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#contactCollapseThree"
+                    aria-expanded="true"
+                    aria-controls="contactCollapseThree"
+                >
+                    お問い合わせ
+                </button>
+                </h2>
+            </div>
+            <div
+                id="contactCollapseThree"
+                class="collapse"
+                aria-labelledby="contactHeadingThree"
+                data-parent="#contactAccordion"
+            >
+                <div class="card-group">
+                <div class="card no-border">
+                    <img
+                    src="./images/typing.jpg"
+                    class="card-img-top lazyload"
+                    alt=""
+                    />
+                    <div class="card-body">
+                    <h5 class="card-title">お問い合わせフォームから</h5>
+                    <p class="card-text">
+                        次のお問い合わせフォームをご利用ください。
+                    </p>
+                    <p>
+                        <a
+                        target="_blank"
+                        class="btn btn-secondary"
+                        href="https://forms.gle/WAAfwJ3FZS9idtCU8"
+                        role="button"
+                        >
+                        <i class="fas fa-external-link-alt"></i>
+                        お問い合わせフォーム
+                        </a>
+                    </p>
+                    </div>
+                </div>
+                <div class="card no-border">
+                    <img
+                    src="./images/texting.jpg"
+                    class="card-img-top lazyload"
+                    alt=""
+                    />
+                    <div class="card-body">
+                    <h5 class="card-title">Twitter から</h5>
+                    <p class="card-text">
+                        Twitter で @winc_w
+                        にダイレクトメッセージを送ってください。
+                    </p>
+                    <p>
+                        <a
+                        target="_blank"
+                        class="btn btn-secondary"
+                        href="https://twitter.com/winc_w"
+                        >
+                        <i class="fab fa-twitter"></i>
+                        Twitter（@winc_w）
+                        </a>
+                    </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!--
+                リンク
+            -->
+
+        <a id="link-anchor" class="anchor"></a>
+        <h2
+            class="border-accent mx-auto my-5 py-1 font-weight-bold text-center"
+        >
+            <i class="lg far fa-star"></i>
+            <br />
+            リンク
+        </h2>
+        <div class="accordion" id="linkAccordion">
+            <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                <button
+                    class="btn btn-link"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#linkCollapseOne"
+                    aria-expanded="true"
+                    aria-controls="linkCollapseOne"
+                >
+                    <i class="fas fa-school fa-fw"></i>
+                    早稲田大学
+                </button>
+                </h2>
+            </div>
+            <div
+                id="linkCollapseOne"
+                class="collapse"
+                aria-labelledby="linkHeadingOne"
+                data-parent="#linkAccordion"
+            >
+                <div class="card-body">
+                <ul>
+                    <li>
+                    <a target="_blank" href="https://www.waseda.jp/top/">
+                        <i class="fas fa-external-link-alt"></i>
+                        早稲田大学
+                    </a>
+                    </li>
+                    <li>
+                    <a
+                        target="_blank"
+                        href="https://www.waseda.jp/top/about/work/organizations/public-relations"
+                    >
+                        <i class="fas fa-external-link-alt"></i>
+                        早稲田大学広報課
+                    </a>
+                    </li>
+                    <li>
+                    <a target="_blank" href="http://www.waseda.jp/student/">
+                        <i class="fas fa-external-link-alt"></i>
+                        早稲田大学学生部
+                    </a>
+                    </li>
+                    <li>
+                    <a
+                        target="_blank"
+                        href="https://www.waseda.jp/student/gakusei/kaikan.html"
+                    >
+                        <i class="fas fa-external-link-alt"></i>
+                        早稲田大学学生会館
+                    </a>
+                    </li>
+                    <li>
+                    <a target="_blank" href="http://www.waseda.jp/navi/">
+                        <i class="fas fa-external-link-alt"></i>
+                        早稲田大学ITサービスナビ
+                    </a>
+                    </li>
+                    <li>
+                    <a
+                        target="_blank"
+                        href="https://www.waseda.jp/library/search_find/off-campus-access/"
+                    >
+                        <i class="fas fa-external-link-alt"></i>
+                        早稲田大学図書館学外アクセス
+                    </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header" id="linkHeadingTwo">
+                <h2 class="mb-0">
+                <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#linkCollapseTwo"
+                    aria-expanded="false"
+                    aria-controls="linkCollapseTwo"
+                >
+                    <i class="far fa-file-alt fa-fw"></i>
+                    ドキュメント
+                </button>
+                </h2>
+            </div>
+            <div
+                id="linkCollapseTwo"
+                class="collapse"
+                aria-labelledby="linkHeadingTwo"
+                data-parent="#linkAccordion"
+            >
+                <div class="card-body">
+                <ul>
+                    <li>
+                    <a target="_blank" href="https://devdocs.io/cpp/">
+                        <i class="fas fa-external-link-alt"></i>
+                        C++ Documentation
+                    </a>
+                    </li>
+                    <li>
+                    <a
+                        target="_blank"
+                        href="https://docs.oracle.com/en/java/javase/11/"
+                    >
+                        <i class="fas fa-external-link-alt"></i>
+                        JDK 11 Documentation
+                    </a>
+                    </li>
+                    <li>
+                    <a
+                        target="_blank"
+                        href="https://kotlinlang.org/docs/reference/"
+                    >
+                        <i class="fas fa-external-link-alt"></i>
+                        Kotlin Documentation
+                    </a>
+                    </li>
+                    <li>
+                    <a target="_blank" href="https://docs.python.org/3.7/">
+                        <i class="fas fa-external-link-alt"></i>
+                        Python 3.7 Documentation
+                    </a>
+                    </li>
+                    <li>
+                    <a target="_blank" href="https://golang.org/doc/">
+                        <i class="fas fa-external-link-alt"></i>
+                        Go Documentation
+                    </a>
+                    </li>
+                    <li>
+                    <a target="_blank" href="https://developers.google.com/">
+                        <i class="fas fa-external-link-alt"></i>
+                        Google Developers
+                    </a>
+                    <br />
+                    Googleの様々なプロダクトのドキュメント
+                    </li>
+                    <li>
+                    <a target="_blank" href="https://developer.mozilla.org/ja/">
+                        <i class="fas fa-external-link-alt"></i>
+                        MDN Web Docs
+                    </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header" id="linkHeadingThree">
+                <h2 class="mb-0">
+                <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#linkCollapseThree"
+                    aria-expanded="false"
+                    aria-controls="linkCollapseThree"
+                >
+                    <i class="far fa-file-code fa-fw"></i>
+                    競技プログラミング
+                </button>
+                </h2>
+            </div>
+            <div
+                id="linkCollapseThree"
+                class="collapse"
+                aria-labelledby="linkHeadingThree"
+                data-parent="#linkAccordion"
+            >
+                <div class="card-body">
+                <ul>
+                    <li>
+                    <a target="_blank" href="https://atcoder.jp/">
+                        <i class="fas fa-external-link-alt"></i>
+                        AtCoder
+                    </a>
+                    </li>
+                    <li>
+                    <a target="_blank" href="https://icpc.baylor.edu/">
+                        <i class="fas fa-external-link-alt"></i>
+                        ICPC
+                    </a>
+                    </li>
+                    <li>
+                    <a target="_blank" href="https://icpc.iisf.or.jp/">
+                        <i class="fas fa-external-link-alt"></i>
+                        ICPC (IISF)
+                    </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header" id="linkHeadingFour">
+                <h2 class="mb-0">
+                <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#linkCollapseFour"
+                    aria-expanded="false"
+                    aria-controls="linkCollapseFour"
+                >
+                    <i class="fas fa-database fa-fw"></i>
+                    データサイエンス
+                </button>
+                </h2>
+            </div>
+            <div
+                id="linkCollapseFour"
+                class="collapse"
+                aria-labelledby="linkHeadingFour"
+                data-parent="#linkAccordion"
+            >
+                <div class="card-body">
+                <ul>
+                    <li>
+                    <a
+                        target="_blank"
+                        href="https://colab.research.google.com/"
+                    >
+                        <i class="fas fa-external-link-alt"></i>
+                        Colaboratory
+                    </a>
+                    </li>
+                    <li>
+                    <a target="_blank" href="https://www.kaggle.com/">
+                        <i class="fas fa-external-link-alt"></i>
+                        Kaggle
+                    </a>
+                    </li>
+                    <li>
+                    <a target="_blank" href="https://grow.google/intl/ALL_jp/">
+                        <i class="fas fa-external-link-alt"></i>
+                        Grow with Google
+                    </a>
+                    <br />
+                    Googleが提供する多様なオンライン講座
+                    </li>
+                    <li>
+                    <a
+                        target="_blank"
+                        href="https://developers.google.com/machine-learning/crash-course/"
+                    >
+                        <i class="fas fa-external-link-alt"></i>
+                        Machine Learning Crash Course
+                    </a>
+                    <br />
+                    Googleが提供する機械学習のオンライン講座
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header" id="linkHeadingFive">
+                <h2 class="mb-0">
+                <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#linkCollapseFive"
+                    aria-expanded="false"
+                    aria-controls="linkCollapseFive"
+                >
+                    <i class="fas fa-graduation-cap fa-fw"></i>
+                    学生特典を利用する
+                </button>
+                </h2>
+            </div>
+            <div
+                id="linkCollapseFive"
+                class="collapse"
+                aria-labelledby="linkHeadingFive"
+                data-parent="#linkAccordion"
+            >
+                <div class="card-body">
+                <ul>
+                    <li>
+                    <a target="_blank" href="https://education.github.com/">
+                        <i class="fas fa-external-link-alt"></i>
+                        GitHub Education
+                    </a>
+                    <br />
+                    GitHub ProやJETBRAINSのIDEが無償で利用できる
+                    </li>
+                    <li>
+                    <a
+                        target="_blank"
+                        href="https://azure.microsoft.com/ja-jp/free/students/"
+                    >
+                        <i class="fas fa-external-link-alt"></i>
+                        Azure for Students
+                    </a>
+                    <br />
+                    クレジットカード不要でマイクロソフトのクラウドプラットフォームが利用できる
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header" id="linkHeadingSix">
+                <h2 class="mb-0">
+                <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#linkCollapseSix"
+                    aria-expanded="false"
+                    aria-controls="linkCollapseSix"
+                >
+                    <i class="far fa-calendar-alt fa-fw"></i>
+                    コンテストに応募する
+                </button>
+                </h2>
+            </div>
+            <div
+                id="linkCollapseSix"
+                class="collapse"
+                aria-labelledby="linkHeadingSix"
+                data-parent="#linkAccordion"
+            >
+                <div class="card-body">
+                <ul>
+                    <li>
+                    <a
+                        target="_blank"
+                        href="https://imaginecup.microsoft.com/ja-jp"
+                    >
+                        <i class="fas fa-external-link-alt"></i>
+                        Imagine Cup
+                    </a>
+                    <br />
+                    マイクロソフトが2003年から毎年実施している学生開発者向けコンペティション
+                    </li>
+                    <li>
+                    <a target="_blank" href="https://u22procon.com/">
+                        <i class="fas fa-external-link-alt"></i>
+                        U-22プログラミング・コンテスト
+                    </a>
+                    <br />
+                    22歳以下のエンジニアを対象としたコンテストで、経済産業省や文部科学省が後援している
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+        <hr />
+        </div>
+    </main>
+
+    <footer class="container">
+        <p>
+        © 2020 Copyright:
+        <a href="./">コンピュータ研究会・WINC</a>
+        </p>
+        <p>
+        <a href="https://www.freepik.com/free-photos-vectors/banner">
+            Banner vector created by katemangostar - www.freepik.com
+        </a>
+        /
+        <a href="https://www.freepik.com/free-photos-vectors/technology">
+            Technology vector created by stories - www.freepik.com
+        </a>
+        /
+        <a href="https://www.freepik.com/free-photos-vectors/people">
+            People vector created by pch.vector - www.freepik.com
+        </a>
+        /
+        <a href="https://www.freepik.com/free-photos-vectors/people">
+            People vector created by pikisuperstar - www.freepik.com
+        </a>
+        /
+        <a href="https://www.freepik.com/free-photos-vectors/business">
+            Business vector created by freepik - www.freepik.com
+        </a>
+        </p>
+    </footer>
+
+    <!-- jQuery -->
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"
+    ></script>
+    <!-- Popper-->
+    <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap -->
+    <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"
+    ></script>
+    <!-- visitCount -->
+    <script>
+        let visitCount = localStorage.getItem('visitCount')
+        let campaign = localStorage.getItem('campaign')
+
+        if (visitCount) {
+        visitCount++
+        } else {
+        visitCount = 1
+        campaign = 'on'
+        }
+        localStorage.setItem('visitCount', visitCount)
+        localStorage.setItem('campaign', campaign)
+
+        if (visitCount % 5 === 2 && campaign !== 'off') {
+        $('#campaignModalCenter').modal()
+        }
+
+        $('#campaignCheck').change(() => {
+        $('#campaignCheck').prop('checked') === true
+            ? (campaign = 'off')
+            : (campaign = 'on')
+        localStorage.setItem('campaign', campaign)
         })
-      })
-    })
-  </script>
-  <!-- Smooth Scroll -->
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault()
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth',
+    </script>
+    <!-- Landbot.io -->
+    <script
+        SameSite="None; Secure"
+        src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"
+    ></script>
+    <script>
+        var myLandbot = new LandbotLivechat({
+        index: 'https://landbot.io/u/H-427162-34ICKC8TZLYFGVUB/index.html',
         })
-      })
-    })
-  </script>
-  <!-- lazysizes -->
-  <!-- <script src="./lazysizes.min.js" async></script> -->
+    </script>
+    <!-- GitHub Profile -->
+    <script>
+        function fetchUserData(username) {
+        return fetch('./github/' + username + '.json').then((response) => {
+            return response.json()
+        })
+        }
+
+        let githubProfileCards = document.querySelectorAll('.github-profile')
+        githubProfileCards.forEach((githubProfileCard) => {
+        fetchUserData(githubProfileCard.dataset.username).then((data) => {
+            let usericon = githubProfileCard.querySelector('img.card-img-top')
+            usericon.src = data.avatar_url
+            usericon.outerHTML =
+            '<a target="_blank" href="' +
+            data.html_url +
+            '">' +
+            usericon.outerHTML +
+            '</a>'
+            let name = githubProfileCard.querySelector('.name')
+            name.innerHTML = name.innerHTML + data.name
+            let username = githubProfileCard.querySelector('.username')
+            username.innerHTML = username.innerHTML + ' ' + data.login
+            let love = githubProfileCard.querySelector('.love')
+            love.innerHTML = love.innerHTML + ' ' + data.love
+            let company = githubProfileCard.querySelector('.company')
+            company.innerHTML = company.innerHTML + ' ' + data.company
+            // Tooltip
+            $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+            })
+        })
+        })
+    </script>
+    <!-- Smooth Scroll -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault()
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+            })
+        })
+        })
+    </script>
+    <!-- lazysizes -->
+    <!-- <script src="./lazysizes.min.js" async></script> -->
 </body>
 </html>
