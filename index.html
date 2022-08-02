@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="format-detection" content="telephone=no" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
     <!-- Noto Sans JP -->
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
@@ -247,108 +247,164 @@
         font-weight: 800;
         }
 
-        .btn-primary {
-        background-color: rgb(255, 0, 85);
-        border-color: rgb(255, 0, 85);
-        }
-
+        .btn-primary{
+            background-color: #ED5485;
+            border-color: #ED5485;
+            width: 300px;
+            text-align: center;
+            font-size: 16px;
+            color: 	#FFF;
+            font-weight: bold;
+            padding: 12px 24px;
+            position: relative;
+            border: 2px solid #9ec34b;
+            transition: .4s;
+          }
+    
         .btn-primary:hover {
-        background-color: rgb(197, 0, 66);
-        border-color: rgb(197, 0, 66);
+            border: 2px solid transparent;
+            color: #FF00FF;
         }
 
-        .btn-primary:not(:disabled):not(.disabled):active {
-        background-color: rgb(197, 0, 66);
-        border-color: rgb(197, 0, 66);
+        .btn-primary:before, .btn-primary:after {
+            width: 100%;
+            height: 100%;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+            transform: scale(0);
+            transition: .2s;
         }
 
-        .btn-primary:focus {
-        background-color: rgb(197, 0, 66);
-        border-color: rgb(197, 0, 66);
+        .btn-primary:before {
+            border-bottom: 3px solid #FFFF88;
+            border-left: 3px solid #FFFF88;;
+            transform-origin: 100% 0%;
         }
 
-        .btn-secondary {
-        background-color: #ed5485;
-        border-color: #ed5485;
+        .btn-primary:after {
+            border-top: 3px solid #33FFFF;
+            border-right: 3px solid #33FFFF;
+            transform-origin: 0% 100%;
+        }
+
+        .btn-primary:hover:after,
+        .btn-primary:hover:before {
+            transform: scale(1);
+        }
+
+        .btn-secondary{
+            background-color: #ED5485;
+            border-color: #ED5485;
+            width: 300px;
+            text-align: center;
+            font-size: 16px;
+            color: 	#FFF;
+            font-weight: bold;
+            padding: 12px 24px;
+            position: relative;
+            border: 2px solid #9ec34b;
+            transition: .4s;
         }
 
         .btn-secondary:hover {
-        background-color: #bb194c;
-        border-color: #bb194c;
+            border: 2px solid transparent;
+            color: #FF00FF;
         }
 
-        .btn-secondary:not(:disabled):not(.disabled):active {
-        background-color: #bb194c;
-        border-color: #bb194c;
+        .btn-secondary:before, .btn-secondary:after {
+            width: 100%;
+            height: 100%;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+            transform: scale(0);
+            transition: .2s;
         }
 
-        .btn-secondary:focus {
-        background-color: #bb194c;
-        border-color: #bb194c;
+        .btn-secondary:before {
+            border-bottom: 3px solid #FFFF88;
+            border-left: 3px solid #FFFF88;;
+            transform-origin: 100% 0%;
         }
 
+        .btn-secondary:after {
+            border-top: 3px solid #33FFFF;
+            border-right: 3px solid #33FFFF;
+            transform-origin: 0% 100%;
+        }
+
+        .btn-secondary:hover:after,
+        .btn-secondary:hover:before {
+            transform: scale(1);
+        }
+    
         .font-weight-bold {
-        font-weight: 400 !important;
+            font-weight: 400 !important;
         }
 
         .alert-secondary {
-        background: rgb(233, 64, 120);
-        background: linear-gradient(
-            0deg,
-            rgba(233, 64, 120, 1) 11%,
-            rgba(236, 39, 74, 1) 100%
-        );
-        border-color: #ed5485;
-        color: white;
+            background: rgb(233, 64, 120);
+            background: linear-gradient(
+                0deg,
+                rgba(233, 64, 120, 1) 11%,
+                rgba(236, 39, 74, 1) 100%
+            );
+            border-color: #ed5485;
+            color: white;
         }
 
         .alert-secondary hr {
-        border-top-color: white;
+            border-top-color: white;
         }
 
         .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
 
         @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-            font-size: 3.5rem;
-        }
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
         }
 
         iframe.calendar {
-        width: 100%;
-        min-width: 300px;
-        height: 500px;
+            width: 100%;
+            min-width: 300px;
+            height: 500px;
         }
 
         .github-profile .card-text {
-        word-break: break-all;
+            word-break: break-all;
         }
 
         @media (max-width: 767px) {
-        .github-profile .card-img-top {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-        }
+            .github-profile .card-img-top {
+                width: 100%;
+                height: 150px;
+                object-fit: cover;
+            }
 
-        .jumbotron .display-3 {
-            padding-bottom: 20px;
-        }
+            .jumbotron .display-3 {
+                padding-bottom: 20px;
+            }
         }
 
         @media (max-width: 1250px) {
-        .intro-text {
-            padding: 10px;
-            background-color: #0000004b;
-            border-radius: 0.25rem;
-        }
+            .intro-text {
+                padding: 10px;
+                background-color: #0000004b;
+                border-radius: 0.25rem;
+            }
         }
     </style>
     </head>
