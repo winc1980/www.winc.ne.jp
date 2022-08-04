@@ -248,43 +248,101 @@
       }
 
       .btn-primary {
-        background-color: rgb(255, 0, 85);
-        border-color: rgb(255, 0, 85);
+        background-color: #ed5485;
+        border-color: #ed5485;
+        width: 300px;
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+        font-weight: bold;
+        padding: 12px 24px;
+        position: relative;
+        border: 2px solid #9ec34b;
+        transition: 0.4s;
       }
 
       .btn-primary:hover {
-        background-color: rgb(197, 0, 66);
-        border-color: rgb(197, 0, 66);
+        border: 2px solid transparent;
+        color: #ff00ff;
       }
 
-      .btn-primary:not(:disabled):not(.disabled):active {
-        background-color: rgb(197, 0, 66);
-        border-color: rgb(197, 0, 66);
+      .btn-primary:before,
+      .btn-primary:after {
+        width: 100%;
+        height: 100%;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        transform: scale(0);
+        transition: 0.2s;
       }
 
-      .btn-primary:focus {
-        background-color: rgb(197, 0, 66);
-        border-color: rgb(197, 0, 66);
+      .btn-primary:before {
+        border-bottom: 3px solid #ffff88;
+        border-left: 3px solid #ffff88;
+        transform-origin: 100% 0%;
+      }
+
+      .btn-primary:after {
+        border-top: 3px solid #33ffff;
+        border-right: 3px solid #33ffff;
+        transform-origin: 0% 100%;
+      }
+
+      .btn-primary:hover:after,
+      .btn-primary:hover:before {
+        transform: scale(1);
       }
 
       .btn-secondary {
         background-color: #ed5485;
         border-color: #ed5485;
+        width: 300px;
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+        font-weight: bold;
+        padding: 12px 24px;
+        position: relative;
+        border: 2px solid #9ec34b;
+        transition: 0.4s;
       }
 
       .btn-secondary:hover {
-        background-color: #bb194c;
-        border-color: #bb194c;
+        border: 2px solid transparent;
+        color: #ff00ff;
       }
 
-      .btn-secondary:not(:disabled):not(.disabled):active {
-        background-color: #bb194c;
-        border-color: #bb194c;
+      .btn-secondary:before,
+      .btn-secondary:after {
+        width: 100%;
+        height: 100%;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        transform: scale(0);
+        transition: 0.2s;
       }
 
-      .btn-secondary:focus {
-        background-color: #bb194c;
-        border-color: #bb194c;
+      .btn-secondary:before {
+        border-bottom: 3px solid #ffff88;
+        border-left: 3px solid #ffff88;
+        transform-origin: 100% 0%;
+      }
+
+      .btn-secondary:after {
+        border-top: 3px solid #33ffff;
+        border-right: 3px solid #33ffff;
+        transform-origin: 0% 100%;
+      }
+
+      .btn-secondary:hover:after,
+      .btn-secondary:hover:before {
+        transform: scale(1);
       }
 
       .font-weight-bold {
@@ -373,10 +431,16 @@
             <a class="nav-link" href="#activity-anchor">活動内容</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#schedule-anchor">活動日程</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#location-anchor">活動場所</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact-anchor">お問い合わせ</a>
+            <a class="nav-link" href="#contact-anchor">よくあるご質問</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#link-anchor">リンク</a>
           </li>
         </ul>
         <a
@@ -419,7 +483,7 @@
           <div class="col-md-4">
             <h2 class="font-weight-bold">インターカレッジ、学年も専攻も不問</h2>
             <p>
-              当サークルは大学・学年・学部・学科に制限はありません。初心者も経験者も文系も理系も大歓迎です。会員の所属大学は早稲田、お茶の水女子、慶應、上智、専修、電気通信、東京、東京工業、東京理科、二松学舎、日本女子、法政、など
+              当サークルは大学・学年・学部・学科に制限はありません。初心者も経験者も文系も理系も大歓迎です。(現在：30/138人は未経験)会員の所属大学は早稲田、お茶の水女子、慶應、上智、専修、電気通信、東京、東京工業、東京理科、二松学舎、日本女子、法政、など
             </p>
           </div>
           <div class="col-md-4">
@@ -530,6 +594,7 @@
         <!-- 
                 活動日程
              -->
+        <a id="schedule-anchor" class="anchor"></a>
         <h2
           class="border-accent mx-auto my-5 py-1 font-weight-bold text-center"
         >
@@ -565,6 +630,9 @@
           <br />
           活動場所
         </h2>
+        <p class="mx-auto text-center">
+          主な活動場所は学生会館です。活動の詳細についてはTwitterやInstagramをご覧ください。
+        </p>
         <div class="row pt-4">
           <div class="col-lg-8">
             <div class="google-maps">
@@ -587,7 +655,7 @@
               <a
                 target="_blank"
                 class="btn btn-secondary btn-block"
-                href="http://www.waseda.jp/student/gakusei/kaikan.html"
+                href="https://www.waseda.jp/inst/student/facility/studentcenter/about"
               >
                 学生会館について
               </a>
@@ -602,6 +670,17 @@
                 キャンパス間連絡バス
               </a>
             </p>
+            <p>
+              <a
+                target="_blank"
+                class="btn btn-secondary btn-block"
+                href="https://www.waseda.jp/top/access/toyama-campus"
+                role="button"
+              >
+                学生会館へのアクセス方法
+              </a>
+            </p>
+            <p>※早稲田大学のHPにリンクが飛びます。</p>
           </div>
         </div>
         <!--
@@ -736,10 +815,16 @@
               data-parent="#contactAccordion"
             >
               <div class="card-body">
+                <p>通常2週間以内に返信いたします。</p>
+                <p>過去に回答した質問の一部はこちらからもご覧になれます。</p>
                 <p>
-                  通常2週間以内に返信いたします。WINCに入会をご希望の方からよくいただくご質問はこちらです。ご参照ください。
+                  <a href="https://peing.net/ja/winc_w" target="_blank">
+                    コンピュータ研究会・WINCの質問箱
+                  </a>
                 </p>
-                <p>よくあるご質問（FAQ）</p>
+                <p>
+                  (活動日等につきましては、最新の情報をお問い合わせください。)
+                </p>
                 <p>
                   以下の項目にご同意の上お問い合わせくださいますようお願いいたします。
                 </p>
@@ -1267,7 +1352,7 @@
 
     <footer class="container">
       <p>
-        © 2020 Copyright:
+        © 2022 Copyright:
         <a href="./">コンピュータ研究会・WINC</a>
       </p>
       <p>
