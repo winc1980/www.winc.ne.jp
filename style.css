@@ -230,6 +230,12 @@ i.lg {
 	user-select: none;
 }
 
+.welcome_calendar{
+	display: block;
+	margin: 0 auto 60px auto;
+	width: 700px;
+}
+
 @media (min-width: 768px) {
 	.bd-placeholder-img-lg {
 		font-size: 3.5rem;
