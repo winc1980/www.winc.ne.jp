@@ -233,7 +233,7 @@ i.lg {
 .welcome_calendar{
 	display: block;
 	margin: 0 auto 60px auto;
-	width: 700px;
+	width: 100%;
 }
 
 @media (min-width: 768px) {
