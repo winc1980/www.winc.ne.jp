@@ -262,6 +262,10 @@ iframe.calendar {
 	.jumbotron .display-3 {
 		padding-bottom: 20px;
 	}
+
+	.sponsor-wrapper {
+		flex-wrap: wrap;
+	}
 }
 
 @media (max-width: 1250px) {
