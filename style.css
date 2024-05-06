@@ -145,25 +145,22 @@ i.lg {
 	border-bottom: 6px solid #ed5485;
 }
 
-.jumbotron {
-	background-image: url(images/new-background.JPG);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	border-radius: 0;
-	color: white;
-}
-
-.jumbotron .container {
-	padding: 100px 0 60px 20px;
-}
-
-.jumbotron .display-3 {
+.display-3 {
 	color: white;
 	font-weight: 800;
+	position: absolute;
+	left: 20px;
+	top: 80px;
+	margin-bottom: 60px;
+  
 }
 
+.btn btn-primary btn-lg my-3{
+	position: absolute;
+	left: 20px;
+	top: 180px;
 
+}
 
 .btn-primary{
 	background-color: #ed5485;
@@ -271,3 +268,134 @@ iframe.calendar {
 		border-radius: .25rem;
 	}
 }
+
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {
+    position:relative;
+	padding: 0 auto;
+}
+/*　背景画像設定　*/
+
+.slider-item01 {
+    background:url(images/background1.JPG);
+}
+
+.slider-item02 {
+    background:url(images/background2.JPG);
+}
+
+.slider-item03 {
+    background:url(images/background3.JPG);
+}
+
+.slider-item {
+    width: 100%;/*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
+    height:70vh;/*各スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+    background-repeat: no-repeat;/*背景画像をリピートしない*/
+    background-position: center;/*背景画像の位置を中央に*/
+    background-size: cover;/*背景画像が.slider-item全体を覆い表示*/
+	border-radius: 0;
+	color: white;
+}  
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev, 
+.slick-next {
+    position: absolute;/*絶対配置にする*/
+  z-index: 3;
+    top: 42%;
+    cursor: pointer;/*マウスカーソルを指マークに*/
+    outline: none;/*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #ccc;/*矢印の色*/
+    border-right: 2px solid #ccc;/*矢印の色*/
+    height: 25px;
+    width: 25px;
+}
+
+.slick-prev {/*戻る矢印の位置と形状*/
+    left:2.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+    right:2.5%;
+    transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+  position: relative;
+  z-index: 3;
+    text-align:center;
+  margin:-50px 0 0 0;
+}
+
+.slick-dots li {
+    display:inline-block;
+  margin:0 5px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;/*ドットボタンのサイズ*/
+    height:8px;/*ドットボタンのサイズ*/
+    display:block;
+    border-radius:50%;
+    background:#ccc;/*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button{
+    background:#333;/*ドットボタンの現在地表示の色*/
+}
+
+/*========= レイアウトのためのCSS ===============*/
+ul{
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  color: #fff;
+}
+
+a:hover,
+a:active{
+  text-decoration: none;
+}
+
+
+
+.wrapper{
+  position: relative;
+}
+
+
+
+$('.slider').slick({
+    autoplay: true,
+    autoplaySpeed: 3000,//次のスライドに切り替わる待ち時間
+    speed:1000,//スライドの動きのスピード。初期値は300。
+    infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+    slidesToShow: 1,//スライドを画面に3枚見せる
+    slidesToScroll: 1,//1回のスクロールで3枚の写真を移動して見せる
+    arrows: true,//左右の矢印あり
+    prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
+    nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
+    dots: true,//下部ドットナビゲーションの表示
+        pauseOnFocus: false,//フォーカスで一時停止を無効
+        pauseOnHover: false,//マウスホバーで一時停止を無効
+        pauseOnDotsHover: false,//ドットナビゲーションをマウスホバーで一時停止を無効
+    });
+
+//スマホ用：スライダーをタッチしても止めずにスライドをさせたい場合
+$('.slider').on('touchmove', function(event, slick, currentSlide, nextSlide){
+    $('.slider').slick('slickPlay');
+});

@@ -68,6 +68,13 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@winc_w">
     <link rel="stylesheet" href="./style.css">
+
+    <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <style type="text/css">
     div.exclamation1 {
@@ -81,6 +88,7 @@
 </style>
 
   <body>
+
     <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
       <a class="navbar-brand" href="./">コンピュータ研究会・WINC</a>
       <button
@@ -124,10 +132,19 @@
       </div>
     </nav>
     <main role="main">
-      <div class="jumbotron">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-7 col-md-12">
+      <div class="wrapper">
+      
+        <ul class="slider">
+          <li class="slider-item slider-item01"></li>
+          <li class="slider-item slider-item02"></li>
+          <li class="slider-item slider-item03"></li>
+        </ul>
+      </div>
+        
+      
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/js/6-1-1.js"></script>
               <h1 class="display-3">Hello, world!</h1>
               <p>
                 <a
