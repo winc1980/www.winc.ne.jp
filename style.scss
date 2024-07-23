@@ -310,6 +310,9 @@ iframe.calendar {
   a {
     display: block;
   }
+  img{
+    object-fit: contain;
+  }
   .text-link {
     text-decoration: none;
     color: #ed5485;
@@ -327,6 +330,11 @@ iframe.calendar {
   .fade.active {
     opacity: 1;
     transform: translateY(0px);
+  }
+  .carousel-item {
+    img{
+      border-radius: 1rem;
+    }
   }
 }
 /* -------------------------Webチームページ用のスタイルここまで------------------------- */

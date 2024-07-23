@@ -301,6 +301,9 @@ iframe.calendar {
 .subpage a {
   display: block;
 }
+.subpage img {
+  object-fit: contain;
+}
 .subpage .text-link {
   text-decoration: none;
   color: #ed5485;
@@ -318,6 +321,9 @@ iframe.calendar {
 .subpage .fade.active {
   opacity: 1;
   transform: translateY(0px);
+}
+.subpage .carousel-item img {
+  border-radius: 1rem;
 }
 
 /* -------------------------Webチームページ用のスタイルここまで------------------------- */
