@@ -1,8 +1,8 @@
 @charset "UTF-8";
 :root {
-  --main-color-1: #E7335D;
-  --main-color-2: #EC578A;
-  --main-color-3: #AE2334;
+  --main-color-1: #e7335d;
+  --main-color-2: #ec578a;
+  --main-color-3: #ae2334;
 }
 
 .activity .iconworks::before {
@@ -58,7 +58,7 @@
   box-sizing: border-box;
   margin: 15px 0;
   padding: 10px;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   filter: drop-shadow(1px 1px rgba(0, 0, 0, 0.25));
   font-size: 18px;
   font-weight: 400;
@@ -270,22 +270,32 @@ iframe.calendar {
 }
 /* -------------------------Webチームページ用のスタイルここから------------------------- */
 .subpage h1 {
+  margin: 2rem auto;
+  width: fit-content;
   text-align: center;
-  margin: 2rem 0;
+}
+.subpage h1::after {
+  content: "";
+  background-color: #e7335d;
+  display: block;
+  height: 3px;
+  width: 20rem;
+  margin-top: 1rem;
 }
 .subpage h2 {
   margin-bottom: 20px;
 }
 .subpage h2::before {
   content: "";
-  border-left: 5px solid #ED5485;
+  border-left: 5px solid #ed5485;
   padding-left: 1rem;
 }
 .subpage h3 {
   margin-bottom: 2rem;
   border-bottom: 1px solid #c9c9c9;
 }
-.subpage img {
+.subpage img,
+.subpage a {
   display: block;
 }
 
