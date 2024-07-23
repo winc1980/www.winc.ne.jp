@@ -269,6 +269,9 @@ iframe.calendar {
   }
 }
 /* -------------------------Webチームページ用のスタイルここから------------------------- */
+.subpage section {
+  padding: 3rem 0;
+}
 .subpage h1 {
   margin: 2rem auto;
   width: fit-content;
@@ -278,8 +281,8 @@ iframe.calendar {
   content: "";
   background-color: #e7335d;
   display: block;
-  height: 3px;
-  width: 20rem;
+  height: 6px;
+  width: 100%;
   margin-top: 1rem;
 }
 .subpage h2 {
