@@ -279,7 +279,7 @@ iframe.calendar {
 }
 .subpage h1::after {
   content: "";
-  background-color: #e7335d;
+  background-color: #ed5485;
   display: block;
   height: 6px;
   width: 100%;
@@ -300,6 +300,24 @@ iframe.calendar {
 .subpage img,
 .subpage a {
   display: block;
+}
+.subpage .text-link {
+  text-decoration: none;
+  color: #ed5485;
+  display: inline-block;
+}
+.subpage .text-link:hover {
+  opacity: 0.3;
+  transition: 0.3s;
+}
+.subpage .fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1.5s, transform 1s;
+}
+.subpage .fade.active {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 /* -------------------------Webチームページ用のスタイルここまで------------------------- */

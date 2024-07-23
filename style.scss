@@ -287,7 +287,7 @@ iframe.calendar {
     text-align: center;
     &::after {
       content: "";
-      background-color: #e7335d;
+      background-color: #ed5485;
       display: block;
       height: 6px;
       width: 100%;
@@ -309,6 +309,24 @@ iframe.calendar {
   img,
   a {
     display: block;
+  }
+  .text-link {
+    text-decoration: none;
+    color: #ed5485;
+    display: inline-block;
+    &:hover {
+      opacity: 0.3;
+      transition: 0.3s;
+    }
+  }
+  .fade {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.5s, transform 1s;
+  }
+  .fade.active {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 /* -------------------------Webチームページ用のスタイルここまで------------------------- */
