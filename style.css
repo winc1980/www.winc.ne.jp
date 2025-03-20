@@ -238,6 +238,26 @@ i.lg {
   width: 100%;
 }
 
+.line-qr-img {
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+}
+
+.line-qr a {
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .line-qr {
+    display: none !important;
+  }
+}
+@media (min-width: 767px) {
+  .sp-linelink {
+    display: none !important;
+  }
+}
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
